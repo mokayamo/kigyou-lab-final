@@ -31,6 +31,7 @@ header {
 }
 
 .logo {
+    font-family: 'BIZ UDMincho', serif;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
