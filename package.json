@@ -7,7 +7,13 @@
     "dev": "python3 -m http.server 8001",
     "start": "python3 -m http.server 8001",
     "build": "echo 'Static site - no build needed'",
-    "deploy": "vercel --prod"
+    "deploy": "./deploy.sh",
+    "deploy:vercel": "vercel --prod --yes",
+    "deploy:auto": "./deploy.sh \"Auto deployment\"",
+    "deploy:custom": "./deploy.sh",
+    "alias": "vercel alias set kigyou-lab.vercel.app",
+    "push": "git add -A && git commit -m \"Auto commit $(date)\" && git push origin main",
+    "sync": "npm run deploy && npm run push"
   },
   "keywords": [
     "startup",
@@ -24,7 +30,7 @@
     "type": "git",
     "url": "https://github.com/mokayamo/kigyou-lab-final.git"
   },
-  "homepage": "https://kigyou-lab-final.vercel.app",
+  "homepage": "https://kigyou-lab.vercel.app",
   "dependencies": {
     "vercel": "^44.2.7"
   }

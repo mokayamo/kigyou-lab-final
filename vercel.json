@@ -11,5 +11,13 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ]
+  ],
+  "github": {
+    "enabled": true,
+    "autoAlias": false
+  },
+  "alias": ["kigyou-lab.vercel.app"],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
