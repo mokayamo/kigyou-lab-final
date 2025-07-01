@@ -11,7 +11,6 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-<<<<<<< HEAD
   ],
   "github": {
     "enabled": true,
@@ -21,7 +20,4 @@
   "env": {
     "NODE_ENV": "production"
   }
-=======
-  ]
->>>>>>> 2da2eed64906383fbc8f753aa3d0680ac5350c09
 }
