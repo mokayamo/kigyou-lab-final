@@ -1,0 +1,30 @@
+{
+  "name": "kigyou-lab-blog",
+  "version": "1.0.1",
+  "description": "起業・会社設立情報ブログサイト - ファクトチェック機能付き",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8001",
+    "start": "python3 -m http.server 8001",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "startup",
+    "company-establishment",
+    "business",
+    "entrepreneurship",
+    "japan",
+    "factcheck",
+    "blog"
+  ],
+  "author": "起業ラボ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mokayamo/kigyou-lab-final.git"
+  },
+  "homepage": "https://kigyou-lab-final.vercel.app",
+  "devDependencies": {},
+  "dependencies": {}
+}
