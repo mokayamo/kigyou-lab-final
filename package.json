@@ -25,6 +25,7 @@
     "url": "https://github.com/mokayamo/kigyou-lab-final.git"
   },
   "homepage": "https://kigyou-lab-final.vercel.app",
-  "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "vercel": "^44.2.7"
+  }
 }
