@@ -12,12 +12,24 @@
       "dest": "/$1"
     }
   ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
   "github": {
     "enabled": true,
     "autoAlias": false
   },
   "alias": ["kigyou-lab.vercel.app"],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "VERCEL_FORCE_NO_BUILD_CACHE": "1"
   }
 }
