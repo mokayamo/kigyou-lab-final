@@ -1,7 +1,7 @@
 {
   "name": "kigyou-lab-blog",
-  "version": "1.0.1",
-  "description": "起業・会社設立情報ブログサイト - ファクトチェック機能付き",
+  "version": "1.0.2",
+  "description": "起業・会社設立情報ブログサイト",
   "main": "index.html",
   "scripts": {
     "dev": "python3 -m http.server 8001",
@@ -21,7 +21,7 @@
     "business",
     "entrepreneurship",
     "japan",
-    "factcheck",
+    "reliable",
     "blog"
   ],
   "author": "起業ラボ",
