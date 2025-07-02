@@ -107,4 +107,4 @@ npm run deploy
 
 ---
 
-© 2025 起業ラボ. All rights reserved.
+© 2025 起業ラボ. All rights reserved.# Deployment Reset - Wed Jul  2 12:54:15 JST 2025

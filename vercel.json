@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "kigyou-lab-v2",
   "builds": [
     {
       "src": "**/*",
@@ -14,11 +15,19 @@
   ],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "**/*",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "Expires",
+          "value": "0"
         }
       ]
     }
@@ -30,6 +39,7 @@
   "alias": ["kigyou-lab.vercel.app"],
   "env": {
     "NODE_ENV": "production",
-    "VERCEL_FORCE_NO_BUILD_CACHE": "1"
+    "VERCEL_FORCE_NO_BUILD_CACHE": "1",
+    "VERCEL_PROJECT_ID": "new"
   }
 }
