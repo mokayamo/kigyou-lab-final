@@ -11,14 +11,14 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 /* ヘッダー */
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 1rem 0;
+    padding: 0.7rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
@@ -65,17 +65,61 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
     transition: opacity 0.3s;
+}
+
+/* モバイル専用のナビゲーションスタイル */
+@media (max-width: 768px) {
+    nav a {
+        color: #e9ecef !important;
+        text-decoration: none !important;
+        font-weight: 500 !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
+    }
+    
+    nav a:hover {
+        color: #ffffff !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+    }
 }
 
 nav a:hover {
     opacity: 0.8;
 }
 
+/* ハンバーガーメニュー */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* メインコンテンツ */
 main {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -248,25 +292,96 @@ footer {
 /* レスポンシブ */
 @media (max-width: 768px) {
     body {
-        padding-top: 120px;
+        padding-top: 80px;
+    }
+    
+    header {
+        padding: 0.8rem 0;
+    }
+    
+    .header-container {
+        flex-direction: row;
+        gap: 0;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(248, 249, 250, 0.95);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        z-index: 999;
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(102, 126, 234, 0.3);
+    }
+    
+    nav.active {
+        max-height: 300px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+    
+    nav li {
+        border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+        width: 100%;
+    }
+    
+    nav li:last-child {
+        border-bottom: none;
+    }
+    
+    nav ul li a {
+        display: block !important;
+        padding: 1rem 2rem !important;
+        font-size: 1rem !important;
+        color: #495057 !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+        text-align: left !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        line-height: 1.5 !important;
+        font-weight: 500 !important;
+        background: transparent !important;
+    }
+    
+    nav ul li a:hover {
+        background: rgba(102, 126, 234, 0.1) !important;
+        color: #667eea !important;
+        opacity: 1 !important;
+        padding-left: 2.5rem !important;
     }
     
     main {
         grid-template-columns: 1fr;
         gap: 1rem;
-    }
-    
-    .header-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    nav ul {
-        gap: 1rem;
+        margin: 2rem auto;
     }
     
     .content, .sidebar {
-        padding: 1rem;
+        padding: 1.5rem;
     }
     
     h1 {

@@ -48,6 +48,11 @@
     <header>
         <div class="header-container">
             <a href="../index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="../index.html">ホーム</a></li>
@@ -615,5 +620,65 @@
         <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
         <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
     </footer>
+    <script>
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
+
+        // ハンバーガーメニュー機能
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ナビゲーションリンクをクリックした時にメニューを閉じる
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
