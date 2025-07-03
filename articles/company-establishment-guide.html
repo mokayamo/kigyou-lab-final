@@ -615,6 +615,44 @@
                 alert('URLのコピーに失敗しました。');
             });
         }
+
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // スクロール停止時のタイマーをリセット
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) { // 100px以上スクロールしたら
+                if (scrollTop > lastScrollTop) {
+                    // 下スクロール時: ヘッダーを非表示
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    // 上スクロール時: ヘッダーを表示
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                // ページトップ付近では常に表示
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            // スクロール停止後2秒でヘッダーを表示
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
     </script>
 </body>
 </html>

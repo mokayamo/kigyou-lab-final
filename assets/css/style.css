@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+    padding-top: 80px;
 }
 
 /* ヘッダー */
@@ -19,6 +20,22 @@ header {
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+header.header-hidden {
+    transform: translateY(-100%);
+}
+
+header.header-visible {
+    transform: translateY(0);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 .header-container {
@@ -230,6 +247,10 @@ footer {
 
 /* レスポンシブ */
 @media (max-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+    
     main {
         grid-template-columns: 1fr;
         gap: 1rem;
