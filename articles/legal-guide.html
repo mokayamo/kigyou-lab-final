@@ -581,6 +581,21 @@
             <hr>
 
             <p><em>この記事は一般的な情報提供を目的としており、個別の法的アドバイスではありません。具体的な手続きについては、専門家にご相談ください。</em></p>
+
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
+                </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
+            </div>
         </article>
 
         <aside class="sidebar">
@@ -615,5 +630,38 @@
         <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
         <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
     </footer>
+
+    <script>
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('法務・契約書の基本：起業家が知るべき法的知識');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=法務,契約,起業,起業ラボ`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('法務・契約書の基本：起業家が知るべき法的知識');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('法務・契約書の基本：起業家が知るべき法的知識');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
+            });
+        }
+    </script>
 </body>
 </html>
