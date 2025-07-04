@@ -1,0 +1,56 @@
+User-agent: *
+Allow: /
+
+# 検索エンジンに優先的にクロールさせたいページ
+Allow: /articles/
+Allow: /articles.html
+Allow: /index.html
+
+# クロール不要なファイル・ディレクトリ
+Disallow: /assets/
+Disallow: /*.json
+Disallow: /*.md
+Disallow: /node_modules/
+Disallow: /__pycache__/
+Disallow: /vercel-cli/
+Disallow: /*.py
+Disallow: /*.sh
+Disallow: /*.zip
+Disallow: /*.bundle
+
+# 特定のボットに対する設定
+User-agent: GPTBot
+Allow: /
+Allow: /articles/
+Allow: /articles.html
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /articles/
+Allow: /articles.html
+
+User-agent: Google-Extended
+Allow: /
+Allow: /articles/
+Allow: /articles.html
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /articles/
+Allow: /articles.html
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /articles/
+Allow: /articles.html
+
+User-agent: Anthropic-AI
+Allow: /
+Allow: /articles/
+Allow: /articles.html
+
+# XMLサイトマップの場所
+Sitemap: https://kigyou-lab.vercel.app/sitemap.xml
+
+# クロール頻度の制御
+Crawl-delay: 1
