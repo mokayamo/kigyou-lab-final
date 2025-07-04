@@ -1,3 +1,1 @@
-Deploy trigger file created at: Wed Jul 2 16:50:00 JST 2025
-This file forces Vercel to redeploy the legal guide article.
-Legal guide should be accessible at: /articles/legal-guide.html
+Fri Jul  4 21:25:00 JST 2025
