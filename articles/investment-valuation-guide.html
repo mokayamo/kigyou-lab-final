@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投資ラウンドとバリュエーション：スタートアップ資金調達の実践 | 起業ラボ</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="スタートアップ投資の完全ガイド。シード・シリーズA/B/C各ラウンドの特徴、企業価値算定手法、投資契約の注意点、株式希薄化対策など、資金調達の実践知識を詳しく解説します。">
+    <meta name="keywords" content="投資ラウンド,バリュエーション,資金調達,ベンチャーキャピタル,株式希薄化,シード,シリーズA,企業価値,起業">
+    <meta name="author" content="起業ラボ">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kigyou-lab.vercel.app/articles/investment-valuation-guide.html">
+    <meta property="og:title" content="投資ラウンドとバリュエーション：スタートアップ資金調達の実践">
+    <meta property="og:description" content="スタートアップ投資の完全ガイド。シード・シリーズA/B/C各ラウンドの特徴、企業価値算定手法、投資契約の注意点、株式希薄化対策など、資金調達の実践知識を詳しく解説します。">
+    <meta property="og:image" content="https://kigyou-lab.vercel.app/assets/images/investment-valuation-ogp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="起業ラボ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-07-03T00:00:00+09:00">
+    <meta property="article:modified_time" content="2025-07-03T00:00:00+09:00">
+    <meta property="article:author" content="起業ラボ">
+    <meta property="article:section" content="ファイナンス・投資">
+    <meta property="article:tag" content="起業">
+    <meta property="article:tag" content="投資ラウンド">
+    <meta property="article:tag" content="バリュエーション">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kigyou-lab.vercel.app/articles/investment-valuation-guide.html">
+    <meta property="twitter:title" content="投資ラウンドとバリュエーション：スタートアップ資金調達の実践">
+    <meta property="twitter:description" content="スタートアップ投資の完全ガイド。シード・シリーズA/B/C各ラウンドの特徴、企業価値算定手法、投資契約の注意点、株式希薄化対策など、資金調達の実践知識を詳しく解説します。">
+    <meta property="twitter:image" content="https://kigyou-lab.vercel.app/assets/images/investment-valuation-ogp.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kigyou-lab.vercel.app/articles/investment-valuation-guide.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../articles.html">記事一覧</a></li>
+                    <li><a href="../about.html">ブログについて</a></li>
+                    <li><a href="../contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="content">
+            <h1>投資ラウンドとバリュエーション：スタートアップ資金調達の実践</h1>
+            
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <p style="font-size: 0.75rem; color: #999; margin: 0;">最終更新: 2025年7月3日</p>
+            </div>
+
+            <div class="table-of-contents">
+                <h2>📋 目次</h2>
+                <ol>
+                    <li><a href="#section-1">スタートアップ投資の基本概念</a>
+                        <ul>
+                            <li><a href="#section-1-1">投資ラウンドとは</a></li>
+                            <li><a href="#section-1-2">エクイティファイナンスの特徴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-2">投資ラウンドの種類と特徴</a></li>
+                    <li><a href="#section-3">シードラウンド：アイデアから事業化へ</a>
+                        <ul>
+                            <li><a href="#section-3-1">シードラウンドの資金使途</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-4">シリーズA：プロダクトマーケットフィット</a></li>
+                    <li><a href="#section-5">シリーズB・C：スケーリングフェーズ</a></li>
+                    <li><a href="#section-6">企業価値算定（バリュエーション）の手法</a></li>
+                    <li><a href="#section-7">投資契約の重要ポイント</a></li>
+                    <li><a href="#section-8">株式希薄化と投資家との関係</a></li>
+                    <li><a href="#section-9">投資家選定とデューデリジェンス</a></li>
+                    <li><a href="#section-10">資金調達の準備と実行プロセス</a></li>
+                    <li><a href="#section-11">まとめ</a></li>
+                </ol>
+            </div>
+
+            <h2>はじめに</h2>
+            <p>スタートアップの成長には段階的な資金調達が不可欠です。シードからシリーズA、B、Cと進む各ラウンドには、それぞれ異なる特徴と要求があります。適切なバリュエーション（企業価値算定）と投資条件の理解は、創業者にとって事業の成功を左右する重要な要素です。本記事では、投資ラウンドの実践的な知識から具体的な資金調達戦略まで、スタートアップの資金調達を成功に導くノウハウを詳しく解説します。</p>
+
+            <h2 id="section-1">1. スタートアップ投資の基本概念</h2>
+
+            <h3 id="section-1-1">投資ラウンドとは</h3>
+            <p>投資ラウンドは、スタートアップが事業の成長段階に応じて実施する資金調達のことです。各ラウンドは企業の成熟度と必要資金の用途によって特徴づけられます。</p>
+
+            <div class="info-box">
+                <h4>投資ラウンドの基本構造</h4>
+                <p><strong>エクイティファイナンス</strong></p>
+                <ul>
+                    <li>株式発行による資金調達</li>
+                    <li>投資家は株主として経営参加</li>
+                    <li>借入と異なり返済義務なし</li>
+                </ul>
+                <p><strong>段階的成長モデル</strong></p>
+                <ul>
+                    <li>各段階で必要な資金を調達</li>
+                    <li>マイルストーン達成による企業価値向上</li>
+                    <li>希薄化を最小限に抑制</li>
+                </ul>
+                <p><strong>投資家との戦略的パートナーシップ</strong></p>
+                <ul>
+                    <li>資金提供だけでなくノウハウ支援</li>
+                    <li>ネットワーク・リソースの活用</li>
+                    <li>事業戦略への助言・指導</li>
+                </ul>
+            </div>
+
+            <h3 id="section-1-2">エクイティファイナンスの特徴</h3>
+            <p>エクイティファイナンスは債務ではなく株式の発行による資金調達手法で、スタートアップにとって重要な成長資金源となります。</p>
+
+            <div class="info-box">
+                <h4>エクイティファイナンスのメリット・デメリット</h4>
+                <p><strong>メリット</strong></p>
+                <ul>
+                    <li>返済義務がない</li>
+                    <li>キャッシュフロー負担が軽い</li>
+                    <li>投資家の経営支援を受けられる</li>
+                    <li>事業リスクを投資家と共有</li>
+                </ul>
+                <p><strong>デメリット</strong></p>
+                <ul>
+                    <li>既存株主の持分希薄化</li>
+                    <li>経営の自由度制約</li>
+                    <li>投資家への報告義務</li>
+                    <li>Exit圧力</li>
+                </ul>
+                <p><strong>適用場面</strong></p>
+                <ul>
+                    <li>高成長・高リスク事業</li>
+                    <li>大規模投資が必要な事業</li>
+                    <li>収益化まで時間がかかる事業</li>
+                    <li>スケーラブルなビジネスモデル</li>
+                </ul>
+            </div>
+
+            <h2 id="section-2">2. 投資ラウンドの種類と特徴</h2>
+            <p>スタートアップの成長段階に応じて、シード、シリーズA、B、Cと段階的に資金調達を行います。各ラウンドには明確な特徴と目的があります。</p>
+
+            <div class="info-box">
+                <h4>主要投資ラウンドの比較</h4>
+                <p><strong>シードラウンド</strong></p>
+                <ul>
+                    <li>調達額：数百万円〜数千万円</li>
+                    <li>段階：アイデア〜MVP開発</li>
+                    <li>投資家：エンジェル、シードVC</li>
+                    <li>用途：プロダクト開発、市場検証</li>
+                </ul>
+                <p><strong>シリーズA</strong></p>
+                <ul>
+                    <li>調達額：数千万円〜数億円</li>
+                    <li>段階：PMF達成、初期収益</li>
+                    <li>投資家：アーリーステージVC</li>
+                    <li>用途：チーム拡大、マーケティング</li>
+                </ul>
+                <p><strong>シリーズB</strong></p>
+                <ul>
+                    <li>調達額：数億円〜数十億円</li>
+                    <li>段階：安定的成長、市場拡大</li>
+                    <li>投資家：成長期VC、戦略投資家</li>
+                    <li>用途：事業拡大、新市場進出</li>
+                </ul>
+                <p><strong>シリーズC以降</strong></p>
+                <ul>
+                    <li>調達額：数十億円〜数百億円</li>
+                    <li>段階：スケール拡大、国際展開</li>
+                    <li>投資家：レイターステージVC、PE</li>
+                    <li>用途：M&A、IPO準備</li>
+                </ul>
+            </div>
+
+            <h2 id="section-3">3. シードラウンド：アイデアから事業化へ</h2>
+
+            <h3 id="section-3-1">シードラウンドの資金使途</h3>
+            <p>シードラウンドは事業のアイデアを具体的なプロダクトに発展させ、市場での検証を行うための初期資金調達です。</p>
+
+            <div class="info-box">
+                <h4>シードラウンドの特徴</h4>
+                <p><strong>投資家の特徴</strong></p>
+                <ul>
+                    <li>エンジェル投資家：個人投資家</li>
+                    <li>シードVC：初期段階専門ファンド</li>
+                    <li>アクセラレーター：育成支援付き投資</li>
+                    <li>CVC：事業会社のベンチャー投資部門</li>
+                </ul>
+                <p><strong>評価ポイント</strong></p>
+                <ul>
+                    <li>創業チームの能力・経験</li>
+                    <li>市場機会の大きさ</li>
+                    <li>プロダクトコンセプトの独自性</li>
+                    <li>初期顧客の反応・トラクション</li>
+                </ul>
+                <p><strong>資金使途</strong></p>
+                <ul>
+                    <li>MVP（最小機能プロダクト）開発</li>
+                    <li>初期チーム人件費</li>
+                    <li>市場調査・顧客開発</li>
+                    <li>知的財産権取得</li>
+                </ul>
+                <p><strong>調達のポイント</strong></p>
+                <ul>
+                    <li>明確なビジョンとミッション</li>
+                    <li>検証可能な仮説設定</li>
+                    <li>実行力の高いチーム構成</li>
+                    <li>適切な調達額設定</li>
+                </ul>
+            </div>
+
+            <h2 id="section-4">4. シリーズA：プロダクトマーケットフィット</h2>
+            <p>シリーズAは、プロダクトマーケットフィット（PMF）を達成し、持続的な成長軌道に乗せるための重要な資金調達ラウンドです。</p>
+
+            <div class="info-box">
+                <h4>シリーズAの成功要件</h4>
+                <p><strong>PMF達成の証明</strong></p>
+                <ul>
+                    <li>顧客獲得・維持率の改善</li>
+                    <li>収益モデルの実証</li>
+                    <li>市場からの強い需要</li>
+                    <li>競合優位性の確立</li>
+                </ul>
+                <p><strong>成長指標（KPI）</strong></p>
+                <ul>
+                    <li>月次経常収益（MRR）成長</li>
+                    <li>顧客獲得コスト（CAC）効率化</li>
+                    <li>顧客生涯価値（LTV）向上</li>
+                    <li>チャーンレート改善</li>
+                </ul>
+                <p><strong>投資家の期待</strong></p>
+                <ul>
+                    <li>年率100%以上の成長</li>
+                    <li>明確な事業戦略</li>
+                    <li>経験豊富な経営チーム</li>
+                    <li>スケーラブルなビジネスモデル</li>
+                </ul>
+                <p><strong>資金使途</strong></p>
+                <ul>
+                    <li>営業・マーケティング強化</li>
+                    <li>プロダクト開発加速</li>
+                    <li>チーム拡大（特にセールス）</li>
+                    <li>オペレーション体制構築</li>
+                </ul>
+            </div>
+
+            <h2 id="section-5">5. シリーズB・C：スケーリングフェーズ</h2>
+            <p>シリーズB以降は、確立されたビジネスモデルを基に市場拡大とスケーリングを目指す段階です。</p>
+
+            <div class="info-box">
+                <h4>後期ラウンドの特徴</h4>
+                <p><strong>シリーズBの特徴</strong></p>
+                <ul>
+                    <li>安定した収益成長の実証</li>
+                    <li>市場での地位確立</li>
+                    <li>国内市場での拡大</li>
+                    <li>組織・システムの整備</li>
+                </ul>
+                <p><strong>シリーズCの特徴</strong></p>
+                <ul>
+                    <li>市場リーダーとしての地位</li>
+                    <li>海外展開・新事業開発</li>
+                    <li>M&A戦略の実行</li>
+                    <li>IPO準備・検討開始</li>
+                </ul>
+                <p><strong>投資家の特徴</strong></p>
+                <ul>
+                    <li>大型ファンド（グロースキャピタル）</li>
+                    <li>戦略投資家（事業会社）</li>
+                    <li>プライベートエクイティ</li>
+                    <li>ソブリンウェルスファンド</li>
+                </ul>
+                <p><strong>評価基準</strong></p>
+                <ul>
+                    <li>収益性・利益率の改善</li>
+                    <li>市場シェアと競争優位性</li>
+                    <li>経営の安定性・ガバナンス</li>
+                    <li>Exit戦略の明確化</li>
+                </ul>
+            </div>
+
+            <h2 id="section-6">6. 企業価値算定（バリュエーション）の手法</h2>
+            <p>適切なバリュエーションは、資金調達の成功と株主価値の最大化に直結する重要な要素です。</p>
+
+            <div class="info-box">
+                <h4>主要バリュエーション手法</h4>
+                <p><strong>DCF法（割引キャッシュフロー）</strong></p>
+                <ul>
+                    <li>将来キャッシュフローの現在価値</li>
+                    <li>事業計画に基づく理論価値</li>
+                    <li>成長率・割引率の設定が重要</li>
+                    <li>安定期企業に適用</li>
+                </ul>
+                <p><strong>マルチプル法（倍率法）</strong></p>
+                <ul>
+                    <li>類似企業との比較評価</li>
+                    <li>売上倍率・利益倍率</li>
+                    <li>市場データの活用</li>
+                    <li>迅速な評価が可能</li>
+                </ul>
+                <p><strong>VC法</strong></p>
+                <ul>
+                    <li>Exit時価値からの逆算</li>
+                    <li>期待リターン率の適用</li>
+                    <li>成長段階別リスク調整</li>
+                    <li>スタートアップに特化</li>
+                </ul>
+                <p><strong>リスク調整NPV法</strong></p>
+                <ul>
+                    <li>確率加重シナリオ分析</li>
+                    <li>技術・市場リスクの定量化</li>
+                    <li>段階的投資の価値</li>
+                    <li>オプション価値の評価</li>
+                </ul>
+            </div>
+
+            <h2 id="section-7">7. 投資契約の重要ポイント</h2>
+            <p>投資契約は資金調達後の経営に大きな影響を与えるため、重要な条項を理解し適切に交渉することが必要です。</p>
+
+            <div class="info-box">
+                <h4>投資契約の主要条項</h4>
+                <p><strong>経済的権利</strong></p>
+                <ul>
+                    <li>優先株式の清算優先権</li>
+                    <li>配当権・参加権</li>
+                    <li>アンチダイリューション条項</li>
+                    <li>タグアロング・ドラッグアロング権</li>
+                </ul>
+                <p><strong>議決権・統制権</strong></p>
+                <ul>
+                    <li>取締役選任権</li>
+                    <li>重要事項の拒否権</li>
+                    <li>承認事項の範囲</li>
+                    <li>株主間契約</li>
+                </ul>
+                <p><strong>保護条項</strong></p>
+                <ul>
+                    <li>希薄化防止条項</li>
+                    <li>先買権・優先買取権</li>
+                    <li>情報開示義務</li>
+                    <li>競業避止義務</li>
+                </ul>
+                <p><strong>Exit関連</strong></p>
+                <ul>
+                    <li>共売権（Tag-along）</li>
+                    <li>強制売却権（Drag-along）</li>
+                    <li>Buy-back条項</li>
+                    <li>IPO関連権利</li>
+                </ul>
+            </div>
+
+            <h2 id="section-8">8. 株式希薄化と投資家との関係</h2>
+            <p>資金調達に伴う株式希薄化は避けられませんが、適切な管理により創業者の利益を保護できます。</p>
+
+            <div class="info-box">
+                <h4>希薄化対策</h4>
+                <p><strong>希薄化の計算</strong></p>
+                <ul>
+                    <li>新株発行による持分割合変化</li>
+                    <li>プレマネー・ポストマネーバリュエーション</li>
+                    <li>ストックオプションプールの影響</li>
+                    <li>将来ラウンドの希薄化予測</li>
+                </ul>
+                <p><strong>希薄化最小化策</strong></p>
+                <ul>
+                    <li>適切なバリュエーション交渉</li>
+                    <li>必要最小限の調達額</li>
+                    <li>マイルストーン達成による価値向上</li>
+                    <li>代替調達手段の検討</li>
+                </ul>
+                <p><strong>創業者保護</strong></p>
+                <ul>
+                    <li>Founder Vestingスケジュール</li>
+                    <li>創業者株式の保護</li>
+                    <li>リバースベスティング対策</li>
+                    <li>加速条項の設定</li>
+                </ul>
+                <p><strong>投資家との関係構築</strong></p>
+                <ul>
+                    <li>定期的なコミュニケーション</li>
+                    <li>透明性の高い情報開示</li>
+                    <li>戦略的パートナーシップ</li>
+                    <li>Win-Win関係の構築</li>
+                </ul>
+            </div>
+
+            <h2 id="section-9">9. 投資家選定とデューデリジェンス</h2>
+            <p>適切な投資家の選定は、資金調達の成功と事業成長の加速に直結する重要なプロセスです。</p>
+
+            <div class="info-box">
+                <h4>投資家選定基準</h4>
+                <p><strong>投資方針の適合性</strong></p>
+                <ul>
+                    <li>投資ステージ・規模の一致</li>
+                    <li>業界・テーマへの関心</li>
+                    <li>地理的投資範囲</li>
+                    <li>投資期間・スタンス</li>
+                </ul>
+                <p><strong>付加価値の提供</strong></p>
+                <ul>
+                    <li>業界知識・ネットワーク</li>
+                    <li>経営支援・メンタリング</li>
+                    <li>事業開発支援</li>
+                    <li>人材紹介・採用支援</li>
+                </ul>
+                <p><strong>投資実績・レピュテーション</strong></p>
+                <ul>
+                    <li>過去の投資実績</li>
+                    <li>ポートフォリオ企業の成功率</li>
+                    <li>起業家からの評判</li>
+                    <li>Exit実績・能力</li>
+                </ul>
+                <p><strong>デューデリジェンス対応</strong></p>
+                <ul>
+                    <li>事業計画書の精緻化</li>
+                    <li>財務・法務資料の整備</li>
+                    <li>知的財産権の確認</li>
+                    <li>コンプライアンス体制</li>
+                </ul>
+            </div>
+
+            <h2 id="section-10">10. 資金調達の準備と実行プロセス</h2>
+            <p>成功する資金調達には、入念な準備と戦略的な実行プロセスが必要です。</p>
+
+            <div class="info-box">
+                <h4>資金調達プロセス</h4>
+                <p><strong>準備フェーズ（3-6ヶ月）</strong></p>
+                <ul>
+                    <li>事業計画書・ピッチデック作成</li>
+                    <li>財務モデル・予測の精緻化</li>
+                    <li>データルーム構築</li>
+                    <li>法務・コンプライアンス整備</li>
+                </ul>
+                <p><strong>実行フェーズ（3-6ヶ月）</strong></p>
+                <ul>
+                    <li>投資家リスト作成・優先順位設定</li>
+                    <li>初期接触・関係構築</li>
+                    <li>プレゼンテーション・ピッチ</li>
+                    <li>デューデリジェンス対応</li>
+                </ul>
+                <p><strong>交渉・クロージング（1-2ヶ月）</strong></p>
+                <ul>
+                    <li>バリュエーション・条件交渉</li>
+                    <li>投資契約書ドラフト</li>
+                    <li>最終条件合意</li>
+                    <li>契約締結・資金実行</li>
+                </ul>
+                <p><strong>成功要因</strong></p>
+                <ul>
+                    <li>明確なストーリー・ビジョン</li>
+                    <li>強力な経営チーム</li>
+                    <li>実証されたトラクション</li>
+                    <li>適切なタイミング</li>
+                </ul>
+            </div>
+
+            <h2 id="section-11">11. まとめ</h2>
+            <p>スタートアップの資金調達は、事業成長の各段階で適切な投資家から最適な条件で資金を調達することが重要です。シードからシリーズC以降まで、各ラウンドの特徴を理解し、戦略的にアプローチすることで、事業価値の最大化と創業者の利益保護を両立できます。</p>
+
+            <p>成功のポイントは、単に資金を調達するだけでなく、投資家との長期的なパートナーシップを構築し、事業成長を加速させることです。適切なバリュエーション、投資契約の理解、そして投資家との良好な関係構築が、持続的な成長と成功するExitにつながります。</p>
+
+            <div class="info-box">
+                <h4>資金調達成功の要点</h4>
+                <p><strong>戦略的準備</strong></p>
+                <ul>
+                    <li>成長段階に応じた資金調達戦略</li>
+                    <li>投資家との長期的関係構築</li>
+                    <li>適切なタイミングでの調達実行</li>
+                </ul>
+                <p><strong>価値最大化</strong></p>
+                <ul>
+                    <li>事業価値向上への集中</li>
+                    <li>適正バリュエーションの実現</li>
+                    <li>希薄化の適切な管理</li>
+                </ul>
+                <p><strong>リスク管理</strong></p>
+                <ul>
+                    <li>投資契約条項の理解</li>
+                    <li>創業者権利の保護</li>
+                    <li>複数調達オプションの確保</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <p><em>この記事は一般的な情報提供を目的としており、個別の投資アドバイスではありません。具体的な資金調達については、専門家にご相談ください。</em></p>
+
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
+                </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <h3>最新記事</h3>
+            <ul>
+                <li><a href="marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></li>
+                <li><a href="management-guide.html">経営管理の基礎：効率的な会社運営のためのツールと手法</a></li>
+                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
+            </ul>
+
+            <h3>カテゴリ</h3>
+            <ul>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
+            </ul>
+
+            <h3>お役立ちリンク</h3>
+            <ul>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
+    </footer>
+
+    <script>
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
+
+        // ハンバーガーメニュー機能
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ナビゲーションリンクをクリックした時にメニューを閉じる
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+
+        // SNSシェア機能
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('投資ラウンドとバリュエーション：スタートアップ資金調達の実践 | 起業ラボ');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('投資ラウンドとバリュエーション：スタートアップ資金調達の実践');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('投資ラウンドとバリュエーション：スタートアップ資金調達の実践');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
+            });
+        }
+    </script>
+</body>
+</html>

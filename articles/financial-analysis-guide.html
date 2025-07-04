@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財務諸表の読み方：経営判断に活かす財務分析 | 起業ラボ</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="財務分析の実践ガイド。貸借対照表・損益計算書・キャッシュフロー計算書の読み方、財務比率分析、投資判断指標など、経営に活かす財務分析手法を詳しく解説します。">
+    <meta name="keywords" content="財務諸表,財務分析,貸借対照表,損益計算書,キャッシュフロー,財務比率,投資判断,経営分析,起業">
+    <meta name="author" content="起業ラボ">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kigyou-lab.vercel.app/articles/financial-analysis-guide.html">
+    <meta property="og:title" content="財務諸表の読み方：経営判断に活かす財務分析">
+    <meta property="og:description" content="財務分析の実践ガイド。貸借対照表・損益計算書・キャッシュフロー計算書の読み方、財務比率分析、投資判断指標など、経営に活かす財務分析手法を詳しく解説します。">
+    <meta property="og:image" content="https://kigyou-lab.vercel.app/assets/images/financial-analysis-ogp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="起業ラボ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-07-03T00:00:00+09:00">
+    <meta property="article:modified_time" content="2025-07-03T00:00:00+09:00">
+    <meta property="article:author" content="起業ラボ">
+    <meta property="article:section" content="ファイナンス・投資">
+    <meta property="article:tag" content="起業">
+    <meta property="article:tag" content="財務分析">
+    <meta property="article:tag" content="財務諸表">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kigyou-lab.vercel.app/articles/financial-analysis-guide.html">
+    <meta property="twitter:title" content="財務諸表の読み方：経営判断に活かす財務分析">
+    <meta property="twitter:description" content="財務分析の実践ガイド。貸借対照表・損益計算書・キャッシュフロー計算書の読み方、財務比率分析、投資判断指標など、経営に活かす財務分析手法を詳しく解説します。">
+    <meta property="twitter:image" content="https://kigyou-lab.vercel.app/assets/images/financial-analysis-ogp.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kigyou-lab.vercel.app/articles/financial-analysis-guide.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../articles.html">記事一覧</a></li>
+                    <li><a href="../about.html">ブログについて</a></li>
+                    <li><a href="../contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="content">
+            <h1>財務諸表の読み方：経営判断に活かす財務分析</h1>
+            
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <p style="font-size: 0.75rem; color: #999; margin: 0;">最終更新: 2025年7月3日</p>
+            </div>
+
+            <div class="table-of-contents">
+                <h2>📋 目次</h2>
+                <ol>
+                    <li><a href="#section-1">財務諸表の基本概念</a>
+                        <ul>
+                            <li><a href="#section-1-1">財務諸表の種類と役割</a></li>
+                            <li><a href="#section-1-2">財務分析の目的と重要性</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-2">貸借対照表（B/S）の読み方</a></li>
+                    <li><a href="#section-3">損益計算書（P/L）の読み方</a>
+                        <ul>
+                            <li><a href="#section-3-1">利益の種類と意味</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-4">キャッシュフロー計算書（C/F）の読み方</a></li>
+                    <li><a href="#section-5">収益性分析の指標</a></li>
+                    <li><a href="#section-6">安全性分析の指標</a></li>
+                    <li><a href="#section-7">効率性分析の指標</a></li>
+                    <li><a href="#section-8">成長性分析の指標</a></li>
+                    <li><a href="#section-9">投資判断のための財務分析</a></li>
+                    <li><a href="#section-10">財務分析の活用と意思決定</a></li>
+                    <li><a href="#section-11">まとめ</a></li>
+                </ol>
+            </div>
+
+            <h2>はじめに</h2>
+            <p>財務諸表は企業の経営状況を数値で表現した重要な情報源です。適切に財務諸表を読み解くことで、企業の収益性、安全性、効率性、成長性を把握し、的確な経営判断を行うことができます。本記事では、財務諸表の基本的な読み方から実践的な財務分析手法まで、経営に活かせる財務分析のノウハウを詳しく解説します。</p>
+
+            <h2 id="section-1">1. 財務諸表の基本概念</h2>
+
+            <h3 id="section-1-1">財務諸表の種類と役割</h3>
+            <p>財務諸表は企業の財政状態と経営成績を示す重要な文書です。主要な財務諸表にはそれぞれ異なる役割があります。</p>
+
+            <div class="info-box">
+                <h4>主要財務諸表の概要</h4>
+                <p><strong>貸借対照表（Balance Sheet）</strong></p>
+                <ul>
+                    <li>特定時点の財政状態を表示</li>
+                    <li>資産・負債・純資産の構成</li>
+                    <li>企業の安定性・健全性を評価</li>
+                </ul>
+                <p><strong>損益計算書（Profit & Loss Statement）</strong></p>
+                <ul>
+                    <li>一定期間の経営成績を表示</li>
+                    <li>収益・費用・利益の構造</li>
+                    <li>企業の収益性・効率性を評価</li>
+                </ul>
+                <p><strong>キャッシュフロー計算書（Cash Flow Statement）</strong></p>
+                <ul>
+                    <li>一定期間の現金の流れを表示</li>
+                    <li>営業・投資・財務活動別の分析</li>
+                    <li>企業の資金繰り・成長性を評価</li>
+                </ul>
+                <p><strong>株主資本等変動計算書</strong></p>
+                <ul>
+                    <li>株主資本の変動状況を表示</li>
+                    <li>配当・増資・自己株式の影響</li>
+                    <li>株主価値の変動を評価</li>
+                </ul>
+            </div>
+
+            <h3 id="section-1-2">財務分析の目的と重要性</h3>
+            <p>財務分析は、単に数値を確認するだけでなく、企業の現状把握と将来予測のための重要なツールです。</p>
+
+            <div class="info-box">
+                <h4>財務分析の主要目的</h4>
+                <p><strong>経営状況の把握</strong></p>
+                <ul>
+                    <li>収益性・安全性の現状分析</li>
+                    <li>競合他社との比較</li>
+                    <li>業界平均との対比</li>
+                </ul>
+                <p><strong>問題点の発見</strong></p>
+                <ul>
+                    <li>財務上の課題特定</li>
+                    <li>改善すべき領域の明確化</li>
+                    <li>リスク要因の早期発見</li>
+                </ul>
+                <p><strong>意思決定の支援</strong></p>
+                <ul>
+                    <li>投資判断の根拠提供</li>
+                    <li>資金調達計画の策定</li>
+                    <li>事業戦略の評価・見直し</li>
+                </ul>
+            </div>
+
+            <h2 id="section-2">2. 貸借対照表（B/S）の読み方</h2>
+            <p>貸借対照表は企業の財政状態を表す重要な財務諸表です。資産・負債・純資産の構成を理解することで、企業の安定性を評価できます。</p>
+
+            <div class="info-box">
+                <h4>貸借対照表の構成要素</h4>
+                <p><strong>資産の部</strong></p>
+                <ul>
+                    <li>流動資産：1年以内に現金化される資産</li>
+                    <li>固定資産：長期間にわたって使用される資産</li>
+                    <li>繰延資産：将来の期間に配分される費用</li>
+                </ul>
+                <p><strong>負債の部</strong></p>
+                <ul>
+                    <li>流動負債：1年以内に支払う必要がある債務</li>
+                    <li>固定負債：1年を超えて支払う長期債務</li>
+                    <li>引当金：将来の損失に備えた準備金</li>
+                </ul>
+                <p><strong>純資産の部</strong></p>
+                <ul>
+                    <li>資本金：株主からの出資額</li>
+                    <li>利益剰余金：過去の利益の蓄積</li>
+                    <li>その他包括利益累計額：評価差額等</li>
+                </ul>
+                <p><strong>貸借対照表の基本原則</strong></p>
+                <ul>
+                    <li>資産 = 負債 + 純資産</li>
+                    <li>左側（借方）= 右側（貸方）</li>
+                    <li>財政状態の健全性を評価</li>
+                </ul>
+            </div>
+
+            <h2 id="section-3">3. 損益計算書（P/L）の読み方</h2>
+
+            <h3 id="section-3-1">利益の種類と意味</h3>
+            <p>損益計算書では複数段階の利益が表示され、それぞれ異なる意味を持ちます。各利益の意味を理解することが重要です。</p>
+
+            <div class="info-box">
+                <h4>損益計算書の利益構造</h4>
+                <p><strong>売上総利益（粗利益）</strong></p>
+                <ul>
+                    <li>売上高 - 売上原価</li>
+                    <li>本業の基本的な収益力</li>
+                    <li>商品・サービスの競争力を表す</li>
+                </ul>
+                <p><strong>営業利益</strong></p>
+                <ul>
+                    <li>売上総利益 - 販売費及び一般管理費</li>
+                    <li>本業での最終的な利益</li>
+                    <li>企業の中核的な収益性を表す</li>
+                </ul>
+                <p><strong>経常利益</strong></p>
+                <ul>
+                    <li>営業利益 + 営業外収益 - 営業外費用</li>
+                    <li>通常の企業活動による利益</li>
+                    <li>継続的な収益力を表す</li>
+                </ul>
+                <p><strong>当期純利益</strong></p>
+                <ul>
+                    <li>経常利益 + 特別利益 - 特別損失 - 税金</li>
+                    <li>最終的な利益</li>
+                    <li>株主への分配原資となる</li>
+                </ul>
+            </div>
+
+            <h2 id="section-4">4. キャッシュフロー計算書（C/F）の読み方</h2>
+            <p>キャッシュフロー計算書は実際の現金の動きを表し、企業の資金繰りや成長性を評価する重要な指標です。</p>
+
+            <div class="info-box">
+                <h4>キャッシュフローの分類</h4>
+                <p><strong>営業活動によるキャッシュフロー</strong></p>
+                <ul>
+                    <li>本業から生み出される現金</li>
+                    <li>売上回収・仕入支払いの差額</li>
+                    <li>企業の現金創出力を表す</li>
+                </ul>
+                <p><strong>投資活動によるキャッシュフロー</strong></p>
+                <ul>
+                    <li>設備投資・投資有価証券の売買</li>
+                    <li>将来への投資活動</li>
+                    <li>成長戦略の実行状況を表す</li>
+                </ul>
+                <p><strong>財務活動によるキャッシュフロー</strong></p>
+                <ul>
+                    <li>借入・返済・配当支払い</li>
+                    <li>資金調達と還元活動</li>
+                    <li>財務戦略の実行状況を表す</li>
+                </ul>
+                <p><strong>フリーキャッシュフロー</strong></p>
+                <ul>
+                    <li>営業CF - 投資CF</li>
+                    <li>株主・債権者への還元可能額</li>
+                    <li>企業の真の価値創造力を表す</li>
+                </ul>
+            </div>
+
+            <h2 id="section-5">5. 収益性分析の指標</h2>
+            <p>収益性分析では、企業がどれだけ効率的に利益を生み出しているかを評価します。</p>
+
+            <div class="info-box">
+                <h4>主要な収益性指標</h4>
+                <p><strong>売上高総利益率</strong></p>
+                <ul>
+                    <li>売上総利益 ÷ 売上高 × 100</li>
+                    <li>商品・サービスの収益性</li>
+                    <li>価格戦略・コスト管理の効果</li>
+                </ul>
+                <p><strong>売上高営業利益率</strong></p>
+                <ul>
+                    <li>営業利益 ÷ 売上高 × 100</li>
+                    <li>本業の収益性</li>
+                    <li>経営効率の良さを表す</li>
+                </ul>
+                <p><strong>ROA（総資産利益率）</strong></p>
+                <ul>
+                    <li>当期純利益 ÷ 総資産 × 100</li>
+                    <li>資産の運用効率</li>
+                    <li>企業の総合的な収益力</li>
+                </ul>
+                <p><strong>ROE（自己資本利益率）</strong></p>
+                <ul>
+                    <li>当期純利益 ÷ 自己資本 × 100</li>
+                    <li>株主資本の運用効率</li>
+                    <li>株主への投資リターン</li>
+                </ul>
+            </div>
+
+            <h2 id="section-6">6. 安全性分析の指標</h2>
+            <p>安全性分析では、企業の財務の健全性や支払能力を評価します。</p>
+
+            <div class="info-box">
+                <h4>主要な安全性指標</h4>
+                <p><strong>流動比率</strong></p>
+                <ul>
+                    <li>流動資産 ÷ 流動負債 × 100</li>
+                    <li>短期的な支払能力</li>
+                    <li>一般的に200%以上が安全</li>
+                </ul>
+                <p><strong>当座比率</strong></p>
+                <ul>
+                    <li>当座資産 ÷ 流動負債 × 100</li>
+                    <li>より厳格な短期支払能力</li>
+                    <li>一般的に100%以上が安全</li>
+                </ul>
+                <p><strong>自己資本比率</strong></p>
+                <ul>
+                    <li>自己資本 ÷ 総資本 × 100</li>
+                    <li>財務の安定性</li>
+                    <li>一般的に30%以上が安全</li>
+                </ul>
+                <p><strong>負債比率</strong></p>
+                <ul>
+                    <li>負債 ÷ 自己資本 × 100</li>
+                    <li>負債への依存度</li>
+                    <li>数値が低いほど安全</li>
+                </ul>
+            </div>
+
+            <h2 id="section-7">7. 効率性分析の指標</h2>
+            <p>効率性分析では、企業が資産や資本をどれだけ効率的に活用しているかを評価します。</p>
+
+            <div class="info-box">
+                <h4>主要な効率性指標</h4>
+                <p><strong>総資産回転率</strong></p>
+                <ul>
+                    <li>売上高 ÷ 総資産</li>
+                    <li>資産の活用効率</li>
+                    <li>数値が高いほど効率的</li>
+                </ul>
+                <p><strong>売上債権回転率</strong></p>
+                <ul>
+                    <li>売上高 ÷ 売上債権</li>
+                    <li>売掛金の回収効率</li>
+                    <li>資金繰りの良さを表す</li>
+                </ul>
+                <p><strong>棚卸資産回転率</strong></p>
+                <ul>
+                    <li>売上原価 ÷ 棚卸資産</li>
+                    <li>在庫の管理効率</li>
+                    <li>在庫投資の効果を表す</li>
+                </ul>
+                <p><strong>固定資産回転率</strong></p>
+                <ul>
+                    <li>売上高 ÷ 固定資産</li>
+                    <li>設備投資の効率性</li>
+                    <li>設備の稼働状況を表す</li>
+                </ul>
+            </div>
+
+            <h2 id="section-8">8. 成長性分析の指標</h2>
+            <p>成長性分析では、企業の将来性や成長ポテンシャルを評価します。</p>
+
+            <div class="info-box">
+                <h4>主要な成長性指標</h4>
+                <p><strong>売上高成長率</strong></p>
+                <ul>
+                    <li>（当期売上高 - 前期売上高）÷ 前期売上高 × 100</li>
+                    <li>事業の成長性</li>
+                    <li>市場での競争力を表す</li>
+                </ul>
+                <p><strong>営業利益成長率</strong></p>
+                <ul>
+                    <li>（当期営業利益 - 前期営業利益）÷ 前期営業利益 × 100</li>
+                    <li>収益力の向上度</li>
+                    <li>経営効率の改善を表す</li>
+                </ul>
+                <p><strong>総資産成長率</strong></p>
+                <ul>
+                    <li>（期末総資産 - 期首総資産）÷ 期首総資産 × 100</li>
+                    <li>事業規模の拡大</li>
+                    <li>投資活動の活発さを表す</li>
+                </ul>
+                <p><strong>従業員1人当たり売上高</strong></p>
+                <ul>
+                    <li>売上高 ÷ 従業員数</li>
+                    <li>労働生産性</li>
+                    <li>人的資源の効率性を表す</li>
+                </ul>
+            </div>
+
+            <h2 id="section-9">9. 投資判断のための財務分析</h2>
+            <p>投資判断においては、複数の財務指標を組み合わせて総合的に企業価値を評価することが重要です。</p>
+
+            <div class="info-box">
+                <h4>投資判断指標</h4>
+                <p><strong>PER（株価収益率）</strong></p>
+                <ul>
+                    <li>株価 ÷ 1株当たり利益</li>
+                    <li>株価の割安・割高判定</li>
+                    <li>市場の期待値を表す</li>
+                </ul>
+                <p><strong>PBR（株価純資産倍率）</strong></p>
+                <ul>
+                    <li>株価 ÷ 1株当たり純資産</li>
+                    <li>資産価値との比較</li>
+                    <li>解散価値との対比</li>
+                </ul>
+                <p><strong>配当利回り</strong></p>
+                <ul>
+                    <li>1株当たり配当 ÷ 株価 × 100</li>
+                    <li>投資からのインカムゲイン</li>
+                    <li>現在の投資収益率</li>
+                </ul>
+                <p><strong>EV/EBITDA</strong></p>
+                <ul>
+                    <li>企業価値 ÷ 償却前営業利益</li>
+                    <li>企業の本源的価値評価</li>
+                    <li>M&Aでの評価指標</li>
+                </ul>
+            </div>
+
+            <h2 id="section-10">10. 財務分析の活用と意思決定</h2>
+            <p>財務分析の結果を実際の経営判断や戦略策定に活用する方法を解説します。</p>
+
+            <div class="info-box">
+                <h4>財務分析の実践的活用</h4>
+                <p><strong>経営戦略への活用</strong></p>
+                <ul>
+                    <li>強み・弱みの特定</li>
+                    <li>改善優先順位の決定</li>
+                    <li>投資計画の策定</li>
+                    <li>目標設定と進捗管理</li>
+                </ul>
+                <p><strong>資金調達への活用</strong></p>
+                <ul>
+                    <li>最適資本構成の検討</li>
+                    <li>借入条件の交渉材料</li>
+                    <li>投資家への説明資料</li>
+                    <li>信用力の向上策</li>
+                </ul>
+                <p><strong>パフォーマンス管理</strong></p>
+                <ul>
+                    <li>定期的な業績評価</li>
+                    <li>予算実績差異分析</li>
+                    <li>ベンチマーク比較</li>
+                    <li>早期警告システム</li>
+                </ul>
+                <p><strong>ステークホルダー対応</strong></p>
+                <ul>
+                    <li>株主への説明責任</li>
+                    <li>債権者との関係維持</li>
+                    <li>取引先の信頼獲得</li>
+                    <li>従業員への情報開示</li>
+                </ul>
+            </div>
+
+            <h2 id="section-11">11. まとめ</h2>
+            <p>財務諸表の読み方と財務分析は、経営者にとって必須のスキルです。数値の背景にある事業活動を理解し、適切な経営判断を行うためには、継続的な財務分析が不可欠です。</p>
+
+            <p>重要なのは、単一の指標だけでなく、複数の指標を組み合わせて総合的に企業状況を評価することです。また、業界特性や経営環境の変化も考慮しながら、動的な視点で財務分析を行うことが、より的確な意思決定につながります。</p>
+
+            <div class="info-box">
+                <h4>効果的な財務分析のポイント</h4>
+                <p><strong>継続的な分析</strong></p>
+                <ul>
+                    <li>定期的な財務分析の実施</li>
+                    <li>トレンド分析による変化の把握</li>
+                    <li>早期問題発見システムの構築</li>
+                </ul>
+                <p><strong>比較分析の重要性</strong></p>
+                <ul>
+                    <li>時系列比較による変化の確認</li>
+                    <li>同業他社との比較</li>
+                    <li>業界平均との対比</li>
+                </ul>
+                <p><strong>限界の理解</strong></p>
+                <ul>
+                    <li>過去データの制約</li>
+                    <li>会計処理の影響</li>
+                    <li>定性的要因の考慮</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <p><em>この記事は一般的な情報提供を目的としており、個別の財務アドバイスではありません。具体的な分析については、専門家にご相談ください。</em></p>
+
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
+                </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <h3>最新記事</h3>
+            <ul>
+                <li><a href="marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></li>
+                <li><a href="management-guide.html">経営管理の基礎：効率的な会社運営のためのツールと手法</a></li>
+                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
+            </ul>
+
+            <h3>カテゴリ</h3>
+            <ul>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
+            </ul>
+
+            <h3>お役立ちリンク</h3>
+            <ul>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
+    </footer>
+
+    <script>
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
+
+        // ハンバーガーメニュー機能
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ナビゲーションリンクをクリックした時にメニューを閉じる
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+
+        // SNSシェア機能
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('財務諸表の読み方：経営判断に活かす財務分析 | 起業ラボ');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('財務諸表の読み方：経営判断に活かす財務分析');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('財務諸表の読み方：経営判断に活かす財務分析');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
+            });
+        }
+    </script>
+</body>
+</html>

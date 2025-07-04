@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI設定と業績管理：データドリブン経営の実践 | 起業ラボ</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="データ活用経営の完全ガイド。KPI設計、ダッシュボード構築、データ分析手法、業績改善サイクルなど、数値に基づく経営判断と継続的改善の手法を詳しく解説します。">
+    <meta name="keywords" content="KPI,業績管理,データドリブン,ダッシュボード,データ分析,経営管理,目標管理,パフォーマンス測定,起業">
+    <meta name="author" content="起業ラボ">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kigyou-lab.vercel.app/articles/kpi-performance-guide.html">
+    <meta property="og:title" content="KPI設定と業績管理：データドリブン経営の実践">
+    <meta property="og:description" content="データ活用経営の完全ガイド。KPI設計、ダッシュボード構築、データ分析手法、業績改善サイクルなど、数値に基づく経営判断と継続的改善の手法を詳しく解説します。">
+    <meta property="og:image" content="https://kigyou-lab.vercel.app/assets/images/kpi-performance-ogp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="起業ラボ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-07-03T00:00:00+09:00">
+    <meta property="article:modified_time" content="2025-07-03T00:00:00+09:00">
+    <meta property="article:author" content="起業ラボ">
+    <meta property="article:section" content="経営・戦略">
+    <meta property="article:tag" content="起業">
+    <meta property="article:tag" content="KPI">
+    <meta property="article:tag" content="業績管理">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kigyou-lab.vercel.app/articles/kpi-performance-guide.html">
+    <meta property="twitter:title" content="KPI設定と業績管理：データドリブン経営の実践">
+    <meta property="twitter:description" content="データ活用経営の完全ガイド。KPI設計、ダッシュボード構築、データ分析手法、業績改善サイクルなど、数値に基づく経営判断と継続的改善の手法を詳しく解説します。">
+    <meta property="twitter:image" content="https://kigyou-lab.vercel.app/assets/images/kpi-performance-ogp.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kigyou-lab.vercel.app/articles/kpi-performance-guide.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../articles.html">記事一覧</a></li>
+                    <li><a href="../about.html">ブログについて</a></li>
+                    <li><a href="../contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="content">
+            <h1>KPI設定と業績管理：データドリブン経営の実践</h1>
+            
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <p style="font-size: 0.75rem; color: #999; margin: 0;">最終更新: 2025年7月3日</p>
+            </div>
+
+            <div class="table-of-contents">
+                <h2>📋 目次</h2>
+                <ol>
+                    <li><a href="#section-1">データドリブン経営の基本概念</a>
+                        <ul>
+                            <li><a href="#section-1-1">データドリブン経営とは</a></li>
+                            <li><a href="#section-1-2">従来の経営との違い</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-2">KPIの基礎知識と設計原則</a></li>
+                    <li><a href="#section-3">事業フェーズ別KPI設定</a>
+                        <ul>
+                            <li><a href="#section-3-1">スタートアップ段階のKPI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-4">財務KPIと非財務KPI</a></li>
+                    <li><a href="#section-5">データ収集と測定システム</a></li>
+                    <li><a href="#section-6">ダッシュボード設計と可視化</a></li>
+                    <li><a href="#section-7">業績分析と改善アクション</a></li>
+                    <li><a href="#section-8">チームへのKPI浸透と運用</a></li>
+                    <li><a href="#section-9">予算管理とKPIの連携</a></li>
+                    <li><a href="#section-10">継続的改善とKPI見直し</a></li>
+                    <li><a href="#section-11">まとめ</a></li>
+                </ol>
+            </div>
+
+            <h2>はじめに</h2>
+            <p>現代のビジネス環境において、勘や経験に頼る経営手法では競争に勝ち残ることが困難になっています。データドリブン経営は、客観的な数値に基づいて意思決定を行い、継続的な改善を実現する経営手法です。本記事では、効果的なKPI設定から業績管理システムの構築まで、データを活用した経営の実践方法を詳しく解説します。</p>
+
+            <h2 id="section-1">1. データドリブン経営の基本概念</h2>
+
+            <h3 id="section-1-1">データドリブン経営とは</h3>
+            <p>データドリブン経営は、事業運営のあらゆる場面でデータを収集・分析し、その結果に基づいて戦略的意思決定を行う経営アプローチです。</p>
+
+            <div class="info-box">
+                <h4>データドリブン経営の特徴</h4>
+                <p><strong>客観的意思決定</strong></p>
+                <ul>
+                    <li>数値データに基づく判断</li>
+                    <li>仮説検証による戦略立案</li>
+                    <li>バイアスの排除と合理的選択</li>
+                </ul>
+                <p><strong>迅速な課題発見</strong></p>
+                <ul>
+                    <li>リアルタイムでの状況把握</li>
+                    <li>早期警告システムの構築</li>
+                    <li>予兆の検知と先手対応</li>
+                </ul>
+                <p><strong>継続的改善</strong></p>
+                <ul>
+                    <li>PDCA サイクルの高速化</li>
+                    <li>効果測定と最適化</li>
+                    <li>学習する組織の実現</li>
+                </ul>
+            </div>
+
+            <h3 id="section-1-2">従来の経営との違い</h3>
+            <p>データドリブン経営は、従来の直感的・経験的な経営手法とは根本的に異なるアプローチを取ります。</p>
+
+            <div class="info-box">
+                <h4>経営手法の比較</h4>
+                <p><strong>従来の経営</strong></p>
+                <ul>
+                    <li>経験と勘に基づく意思決定</li>
+                    <li>月次・四半期レポートでの振り返り</li>
+                    <li>事後対応的な問題解決</li>
+                    <li>属人的な判断基準</li>
+                </ul>
+                <p><strong>データドリブン経営</strong></p>
+                <ul>
+                    <li>データ分析に基づく意思決定</li>
+                    <li>リアルタイムでの状況監視</li>
+                    <li>予防的・先行的な問題解決</li>
+                    <li>標準化された判断基準</li>
+                </ul>
+            </div>
+
+            <h2 id="section-2">2. KPIの基礎知識と設計原則</h2>
+            <p>KPI（Key Performance Indicator）は、事業目標の達成度を測る重要業績評価指標です。効果的なKPIを設計することで、組織全体の方向性を統一できます。</p>
+
+            <div class="info-box">
+                <h4>優れたKPIの条件（SMART原則）</h4>
+                <p><strong>Specific（具体的）</strong></p>
+                <ul>
+                    <li>明確で曖昧さのない定義</li>
+                    <li>誰が見ても同じ理解</li>
+                    <li>測定対象の特定</li>
+                </ul>
+                <p><strong>Measurable（測定可能）</strong></p>
+                <ul>
+                    <li>数値で定量化できる</li>
+                    <li>客観的な測定方法</li>
+                    <li>データ収集の仕組み</li>
+                </ul>
+                <p><strong>Achievable（達成可能）</strong></p>
+                <ul>
+                    <li>現実的な目標設定</li>
+                    <li>リソースとの整合性</li>
+                    <li>チャレンジングだが実現可能</li>
+                </ul>
+                <p><strong>Relevant（関連性）</strong></p>
+                <ul>
+                    <li>事業目標との整合性</li>
+                    <li>戦略的重要性</li>
+                    <li>影響力の大きさ</li>
+                </ul>
+                <p><strong>Time-bound（期限設定）</strong></p>
+                <ul>
+                    <li>明確な期限・タイムライン</li>
+                    <li>短期・中期・長期の整合</li>
+                    <li>定期的な評価サイクル</li>
+                </ul>
+            </div>
+
+            <h2 id="section-3">3. 事業フェーズ別KPI設定</h2>
+
+            <h3 id="section-3-1">スタートアップ段階のKPI</h3>
+            <p>事業の成長段階に応じて、重視すべきKPIは変化します。各フェーズで適切な指標を設定することが重要です。</p>
+
+            <div class="info-box">
+                <h4>事業フェーズ別の主要KPI</h4>
+                <p><strong>シード・アーリーステージ</strong></p>
+                <ul>
+                    <li>プロダクトマーケットフィット指標</li>
+                    <li>顧客獲得コスト（CAC）</li>
+                    <li>月次経常収益（MRR）</li>
+                    <li>アクティブユーザー数</li>
+                </ul>
+                <p><strong>グロースステージ</strong></p>
+                <ul>
+                    <li>売上成長率</li>
+                    <li>顧客生涯価値（LTV）</li>
+                    <li>チャーンレート（解約率）</li>
+                    <li>市場シェア</li>
+                </ul>
+                <p><strong>スケールステージ</strong></p>
+                <ul>
+                    <li>収益性指標（EBITDA、営業利益率）</li>
+                    <li>資本効率性（ROE、ROI）</li>
+                    <li>従業員生産性</li>
+                    <li>ブランド認知度</li>
+                </ul>
+            </div>
+
+            <h2 id="section-4">4. 財務KPIと非財務KPI</h2>
+            <p>バランスの取れた業績管理のためには、財務指標と非財務指標を組み合わせることが重要です。</p>
+
+            <div class="info-box">
+                <h4>主要KPIカテゴリ</h4>
+                <p><strong>財務KPI</strong></p>
+                <ul>
+                    <li>売上高・売上成長率</li>
+                    <li>粗利益・粗利益率</li>
+                    <li>営業利益・営業利益率</li>
+                    <li>キャッシュフロー</li>
+                    <li>投資収益率（ROI、ROE）</li>
+                </ul>
+                <p><strong>顧客関連KPI</strong></p>
+                <ul>
+                    <li>新規顧客獲得数</li>
+                    <li>顧客満足度（NPS、CSAT）</li>
+                    <li>顧客維持率・離脱率</li>
+                    <li>平均顧客単価（ARPU）</li>
+                </ul>
+                <p><strong>業務効率KPI</strong></p>
+                <ul>
+                    <li>従業員生産性</li>
+                    <li>業務処理時間</li>
+                    <li>品質指標（不良率、エラー率）</li>
+                    <li>コスト効率</li>
+                </ul>
+                <p><strong>成長・革新KPI</strong></p>
+                <ul>
+                    <li>新製品売上比率</li>
+                    <li>R&D投資比率</li>
+                    <li>市場シェア拡大率</li>
+                    <li>従業員エンゲージメント</li>
+                </ul>
+            </div>
+
+            <h2 id="section-5">5. データ収集と測定システム</h2>
+            <p>正確で信頼性の高いKPIを算出するためには、適切なデータ収集システムの構築が不可欠です。</p>
+
+            <div class="info-box">
+                <h4>データ収集の仕組み</h4>
+                <p><strong>システム連携</strong></p>
+                <ul>
+                    <li>基幹システム（ERP、CRM）との連携</li>
+                    <li>Web解析ツールとの統合</li>
+                    <li>外部データソースの活用</li>
+                    <li>API連携による自動化</li>
+                </ul>
+                <p><strong>データ品質管理</strong></p>
+                <ul>
+                    <li>データクレンジング</li>
+                    <li>重複データの排除</li>
+                    <li>欠損値の処理</li>
+                    <li>データ検証ルール</li>
+                </ul>
+                <p><strong>データガバナンス</strong></p>
+                <ul>
+                    <li>データ定義の標準化</li>
+                    <li>アクセス権限管理</li>
+                    <li>データセキュリティ</li>
+                    <li>監査ログの記録</li>
+                </ul>
+            </div>
+
+            <h2 id="section-6">6. ダッシュボード設計と可視化</h2>
+            <p>効果的なダッシュボードは、複雑なデータを分かりやすく表示し、迅速な意思決定を支援します。</p>
+
+            <div class="info-box">
+                <h4>ダッシュボード設計原則</h4>
+                <p><strong>階層的な情報構造</strong></p>
+                <ul>
+                    <li>エグゼクティブ向け：サマリー情報</li>
+                    <li>マネージャー向け：部門別詳細</li>
+                    <li>オペレーター向け：実務詳細</li>
+                </ul>
+                <p><strong>視覚的分かりやすさ</strong></p>
+                <ul>
+                    <li>適切なグラフ形式の選択</li>
+                    <li>色の効果的な使用</li>
+                    <li>重要情報のハイライト</li>
+                    <li>直感的なレイアウト</li>
+                </ul>
+                <p><strong>インタラクティブ機能</strong></p>
+                <ul>
+                    <li>ドリルダウン機能</li>
+                    <li>フィルタリング・検索</li>
+                    <li>期間設定・比較</li>
+                    <li>アラート・通知機能</li>
+                </ul>
+            </div>
+
+            <h2 id="section-7">7. 業績分析と改善アクション</h2>
+            <p>KPIの数値を監視するだけでなく、分析結果から具体的な改善アクションに繋げることが重要です。</p>
+
+            <div class="info-box">
+                <h4>分析アプローチ</h4>
+                <p><strong>トレンド分析</strong></p>
+                <ul>
+                    <li>時系列データの変化傾向</li>
+                    <li>季節性・周期性の把握</li>
+                    <li>成長率・変化率の計算</li>
+                </ul>
+                <p><strong>比較分析</strong></p>
+                <ul>
+                    <li>前年同期比・前月比</li>
+                    <li>目標値との差異分析</li>
+                    <li>競合他社との比較</li>
+                    <li>業界ベンチマークとの比較</li>
+                </ul>
+                <p><strong>相関・因果分析</strong></p>
+                <ul>
+                    <li>KPI間の相関関係</li>
+                    <li>原因と結果の特定</li>
+                    <li>マーケティング施策の効果測定</li>
+                </ul>
+                <p><strong>異常値・外れ値分析</strong></p>
+                <ul>
+                    <li>通常パターンからの逸脱</li>
+                    <li>問題の早期発見</li>
+                    <li>機会の特定</li>
+                </ul>
+            </div>
+
+            <h2 id="section-8">8. チームへのKPI浸透と運用</h2>
+            <p>KPIを組織全体に浸透させ、日常業務に組み込むことで、データドリブン文化を醸成します。</p>
+
+            <div class="info-box">
+                <h4>組織への浸透方法</h4>
+                <p><strong>教育・研修</strong></p>
+                <ul>
+                    <li>KPIの意味と重要性の説明</li>
+                    <li>データ読み取り能力の向上</li>
+                    <li>分析ツールの使い方研修</li>
+                </ul>
+                <p><strong>定期的なレビュー</strong></p>
+                <ul>
+                    <li>週次・月次の業績レビュー</li>
+                    <li>部門別KPI発表会</li>
+                    <li>改善事例の共有</li>
+                </ul>
+                <p><strong>インセンティブ設計</strong></p>
+                <ul>
+                    <li>KPI達成と評価連動</li>
+                    <li>チーム目標の設定</li>
+                    <li>成果に応じた報酬制度</li>
+                </ul>
+                <p><strong>ツール・システム整備</strong></p>
+                <ul>
+                    <li>誰でもアクセス可能なダッシュボード</li>
+                    <li>モバイル対応</li>
+                    <li>自動レポート配信</li>
+                </ul>
+            </div>
+
+            <h2 id="section-9">9. 予算管理とKPIの連携</h2>
+            <p>予算策定とKPI設定を連携させることで、より精度の高い経営計画を立案できます。</p>
+
+            <div class="info-box">
+                <h4>予算とKPIの統合</h4>
+                <p><strong>予算策定段階</strong></p>
+                <ul>
+                    <li>過去のKPI実績に基づく予算設定</li>
+                    <li>売上予測とコスト計画の整合性</li>
+                    <li>投資対効果の事前評価</li>
+                </ul>
+                <p><strong>実行段階</strong></p>
+                <ul>
+                    <li>予算執行状況のリアルタイム把握</li>
+                    <li>KPI達成に向けた予算配分調整</li>
+                    <li>コスト効率の継続監視</li>
+                </ul>
+                <p><strong>評価・改善段階</strong></p>
+                <ul>
+                    <li>予算vs実績の差異分析</li>
+                    <li>KPI達成要因の特定</li>
+                    <li>次期予算への反映</li>
+                </ul>
+            </div>
+
+            <h2 id="section-10">10. 継続的改善とKPI見直し</h2>
+            <p>事業環境の変化に対応するため、KPIも定期的に見直し、改善していく必要があります。</p>
+
+            <div class="info-box">
+                <h4>KPI見直しのタイミング</h4>
+                <p><strong>定期的な見直し</strong></p>
+                <ul>
+                    <li>四半期・年次の戦略レビュー</li>
+                    <li>事業計画の更新時</li>
+                    <li>組織変更・人事異動時</li>
+                </ul>
+                <p><strong>環境変化への対応</strong></p>
+                <ul>
+                    <li>市場環境の大幅変化</li>
+                    <li>競合状況の変化</li>
+                    <li>技術革新・業界構造変化</li>
+                    <li>法規制の変更</li>
+                </ul>
+                <p><strong>改善の視点</strong></p>
+                <ul>
+                    <li>測定精度の向上</li>
+                    <li>新たな重要指標の追加</li>
+                    <li>不要な指標の削除</li>
+                    <li>目標値の適正化</li>
+                </ul>
+            </div>
+
+            <h2 id="section-11">11. まとめ</h2>
+            <p>データドリブン経営の実現には、適切なKPI設定と継続的な業績管理が不可欠です。単に数値を監視するだけでなく、データから洞察を得て、具体的な改善アクションに繋げることが重要です。</p>
+
+            <p>成功のポイントは、組織全体でデータの重要性を理解し、日常業務にKPIを組み込むことです。また、事業環境の変化に応じてKPIを柔軟に見直し、常に最適な指標で経営を行うことが持続的成長につながります。</p>
+
+            <div class="info-box">
+                <h4>データドリブン経営成功の要点</h4>
+                <p><strong>戦略的設計</strong></p>
+                <ul>
+                    <li>事業目標と整合したKPI設定</li>
+                    <li>段階的な導入・拡張</li>
+                    <li>組織能力に応じたレベル設定</li>
+                </ul>
+                <p><strong>システム・仕組み</strong></p>
+                <ul>
+                    <li>正確なデータ収集システム</li>
+                    <li>分かりやすい可視化</li>
+                    <li>効率的な分析プロセス</li>
+                </ul>
+                <p><strong>組織・文化</strong></p>
+                <ul>
+                    <li>データリテラシーの向上</li>
+                    <li>継続的学習の仕組み</li>
+                    <li>改善を促す組織風土</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <p><em>この記事は一般的な情報提供を目的としており、個別の経営アドバイスではありません。具体的なKPI設定については、専門家にご相談ください。</em></p>
+
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
+                </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <h3>最新記事</h3>
+            <ul>
+                <li><a href="marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></li>
+                <li><a href="management-guide.html">経営管理の基礎：効率的な会社運営のためのツールと手法</a></li>
+                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
+            </ul>
+
+            <h3>カテゴリ</h3>
+            <ul>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
+            </ul>
+
+            <h3>お役立ちリンク</h3>
+            <ul>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
+    </footer>
+
+    <script>
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
+
+        // ハンバーガーメニュー機能
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ナビゲーションリンクをクリックした時にメニューを閉じる
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+
+        // SNSシェア機能
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('KPI設定と業績管理：データドリブン経営の実践 | 起業ラボ');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('KPI設定と業績管理：データドリブン経営の実践');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('KPI設定と業績管理：データドリブン経営の実践');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
+            });
+        }
+    </script>
+</body>
+</html>
