@@ -614,7 +614,7 @@ h2[id], h3[id] {
     display: inline-flex;
     align-items: center;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(135deg, #aed581 0%, #c5e1a5 100%);
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
     color: white;
     text-decoration: none;
     border-radius: 8px;
