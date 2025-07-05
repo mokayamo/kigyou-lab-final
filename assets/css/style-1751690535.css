@@ -639,16 +639,15 @@ h2[id], h3[id] {
 /* 記事タグ */
 .article-tags {
     margin: 2rem 0;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #f0f7f3 0%, #e8f5e8 100%);
-    border-radius: 10px;
-    border-left: 4px solid #4CAF50;
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
 }
 
 .article-tags h3 {
-    margin: 0 0 1rem 0;
-    color: #333;
-    font-size: 1.1rem;
+    margin: 0 0 0.8rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: normal;
     border: none;
     padding: 0;
 }
@@ -656,37 +655,36 @@ h2[id], h3[id] {
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .tag {
     display: inline-block;
-    background: #4CAF50;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    background: #f5f5f5;
+    color: #333;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
     text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
 }
 
 .tag:hover {
-    background: #388E3C;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+    background: #e8e8e8;
+    color: #333;
 }
 
 /* モバイル対応 */
 @media (max-width: 768px) {
     .article-tags {
         margin: 1.5rem 0;
-        padding: 1rem;
+        padding: 0.8rem 0;
     }
     
     .tag {
-        font-size: 0.8rem;
-        padding: 0.25rem 0.6rem;
+        font-size: 0.75rem;
+        padding: 0.15rem 0.5rem;
     }
     
     .back-to-articles {
