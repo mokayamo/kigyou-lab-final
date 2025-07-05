@@ -50,7 +50,7 @@ Allow: /articles/
 Allow: /articles.html
 
 # XMLサイトマップの場所
-Sitemap: https://kigyou-lab.vercel.app/sitemap.xml
+Sitemap: https://kigyou-lab-final.vercel.app/sitemap.xml
 
 # クロール頻度の制御
 Crawl-delay: 1
