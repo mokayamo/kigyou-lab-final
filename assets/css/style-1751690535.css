@@ -639,8 +639,10 @@ h2[id], h3[id] {
 /* 記事タグ */
 .article-tags {
     margin: 2rem 0;
-    padding: 1rem 0;
-    border-top: 1px solid #e0e0e0;
+    padding: 1rem;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
 }
 
 .article-tags h3 {
@@ -679,7 +681,7 @@ h2[id], h3[id] {
 @media (max-width: 768px) {
     .article-tags {
         margin: 1.5rem 0;
-        padding: 0.8rem 0;
+        padding: 0.8rem;
     }
     
     .tag {
