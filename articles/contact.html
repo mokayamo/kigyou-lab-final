@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 起業ラボ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-1751690535.css">
+    <style>
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e1e5e9;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .contact-info {
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            border-left: none;
+        }
+        
+        .response-time {
+            background: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="articles.html">記事一覧</a></li>
+                    <li><a href="about.html">ブログについて</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1>お問い合わせ</h1>
+            
+            <div class="response-time">
+                <p><strong>📧 お返事について</strong></p>
+                <p>お問い合わせをいただいてから、通常2-3営業日以内にご返信いたします。お急ぎの場合はその旨をメッセージ欄にご記載ください。</p>
+            </div>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lastName">お名前（姓）<span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">お名前（名）<span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">メールアドレス<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="例: 03-1234-5678">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">会社名・組織名</label>
+                    <input type="text" id="company" name="company" placeholder="個人の場合は空欄で結構です">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">お問い合わせ種別<span class="required">*</span></label>
+                    <select id="category" name="category" required>
+                        <option value="">選択してください</option>
+                        <option value="article">記事内容について</option>
+                        <option value="correction">記事の訂正・追加情報</option>
+                        <option value="request">記事リクエスト</option>
+                        <option value="business">取材・業務依頼</option>
+                        <option value="technical">サイトの不具合</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">件名<span class="required">*</span></label>
+                    <input type="text" id="subject" name="subject" placeholder="お問い合わせの件名をご入力ください" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">メッセージ<span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="お問い合わせ内容を詳しくご記載ください。&#10;&#10;・記事内容についてのご質問の場合は、該当記事のURL&#10;・記事リクエストの場合は、知りたい内容の詳細&#10;・その他、お気軽にお書きください" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required style="width: auto; margin-right: 0.5rem;">
+                        <a href="privacy.html" target="_blank" style="color: #667eea;">プライバシーポリシー</a>に同意します<span class="required">*</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">送信する</button>
+            </form>
+        </div>
+
+        <aside class="sidebar">
+            <h3>対応時間</h3>
+            <ul>
+                <li>平日 9:00-18:00</li>
+                <li>（土日祝日は翌営業日対応）</li>
+            </ul>
+            
+            <h3>よくあるお問い合わせ</h3>
+            <ul>
+                <li>記事内容の詳細について</li>
+                <li>最新の法改正情報</li>
+                <li>起業関連の記事リクエスト</li>
+                <li>サイト掲載情報の取材依頼</li>
+            </ul>
+            
+            <h3>注意事項</h3>
+            <ul>
+                <li>個別の法的アドバイスはできかねます</li>
+                <li>具体的な手続きは専門家にご相談ください</li>
+                <li>営業目的のご連絡はお控えください</li>
+            </ul>
+            
+            <h3>関連リンク</h3>
+            <ul>
+                <li><a href="about.html">ブログについて</a></li>
+                <li><a href="articles.html">記事一覧</a></li>
+            </ul>
+
+            <h3>お役立ちリンク</h3>
+            <ul>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
+    </footer>
+
+    <script>
+        // フォーム送信時の処理（デモ用）
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 入力値の取得
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // バリデーション
+            if (!data.lastName || !data.firstName || !data.email || !data.category || !data.subject || !data.message) {
+                alert('必須項目をすべて入力してください。');
+                return;
+            }
+            
+            // メールアドレスの簡単なバリデーション
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                alert('正しいメールアドレスを入力してください。');
+                return;
+            }
+            
+            // 送信完了メッセージ（実際のサービスではサーバーサイド処理が必要）
+            alert('お問い合わせを受け付けました。\n\n2-3営業日以内にご返信いたします。\nありがとうございました。');
+            
+            // フォームのリセット
+            this.reset();
+        });
+        
+        // カテゴリー選択時の件名自動入力
+        document.getElementById('category').addEventListener('change', function() {
+            const subject = document.getElementById('subject');
+            const categoryText = this.options[this.selectedIndex].text;
+            
+            if (this.value && !subject.value) {
+                switch(this.value) {
+                    case 'article':
+                        subject.value = '記事内容について - ';
+                        break;
+                    case 'correction':
+                        subject.value = '記事の訂正依頼 - ';
+                        break;
+                    case 'request':
+                        subject.value = '記事リクエスト - ';
+                        break;
+                    case 'business':
+                        subject.value = '取材・業務依頼 - ';
+                        break;
+                    case 'technical':
+                        subject.value = 'サイト不具合報告 - ';
+                        break;
+                    default:
+                        subject.value = 'お問い合わせ - ';
+                }
+            }
+        });
+
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
+
+        // ハンバーガーメニュー機能
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ナビゲーションリンクをクリックした時にメニューを閉じる
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
