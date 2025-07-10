@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クラウド活用とインフラ戦略：効率的なIT基盤の構築 | 起業ラボ</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="クラウド戦略の実践ガイド。クラウド移行戦略、セキュリティ対策、コスト最適化、運用管理、ハイブリッドクラウドなど、効率的なIT基盤構築の手法を詳しく解説します。">
+    <meta name="keywords" content="クラウド戦略,インフラ構築,クラウド移行,セキュリティ対策,コスト最適化,運用管理,ハイブリッドクラウド,AWS,Azure,GCP">
+    <meta name="author" content="起業ラボ">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kigyou-lab.vercel.app/articles/cloud-infrastructure-guide.html">
+    <meta property="og:title" content="クラウド活用とインフラ戦略：効率的なIT基盤の構築">
+    <meta property="og:description" content="クラウド戦略の実践ガイド。クラウド移行戦略、セキュリティ対策、コスト最適化、運用管理、ハイブリッドクラウドなど、効率的なIT基盤構築の手法を詳しく解説します。">
+    <meta property="og:image" content="https://kigyou-lab.vercel.app/assets/images/cloud-infrastructure-guide-ogp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="起業ラボ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-07-10T00:00:00+09:00">
+    <meta property="article:modified_time" content="2025-07-10T00:00:00+09:00">
+    <meta property="article:author" content="起業ラボ">
+    <meta property="article:section" content="グローバル・テクノロジー">
+    <meta property="article:tag" content="起業">
+    <meta property="article:tag" content="クラウド">
+    <meta property="article:tag" content="インフラ">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kigyou-lab.vercel.app/articles/cloud-infrastructure-guide.html">
+    <meta property="twitter:title" content="クラウド活用とインフラ戦略：効率的なIT基盤の構築">
+    <meta property="twitter:description" content="クラウド戦略の実践ガイド。クラウド移行戦略、セキュリティ対策、コスト最適化、運用管理、ハイブリッドクラウドなど、効率的なIT基盤構築の手法を詳しく解説します。">
+    <meta property="twitter:image" content="https://kigyou-lab.vercel.app/assets/images/cloud-infrastructure-guide-ogp.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kigyou-lab.vercel.app/articles/cloud-infrastructure-guide.html">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style-20250708115832.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../articles.html">記事一覧</a></li>
+                    <li><a href="../about.html">ブログについて</a></li>
+                    <li><a href="../contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="content">
+            <h1>クラウド活用とインフラ戦略：効率的なIT基盤の構築</h1>
+            
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <p style="font-size: 0.75rem; color: #999; margin: 0;">最終更新: 2025年7月10日</p>
+            </div>
+            <div class="table-of-contents">
+                <h2>📋 目次</h2>
+                <ol>
+                    <li><a href="#section-1">クラウド戦略の基礎</a>
+                        <ul>
+                            <li><a href="#section-1-1">クラウドのメリット</a></li>
+                            <li><a href="#section-1-2">クラウドサービスの種類</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-2">クラウド移行戦略</a></li>
+                    <li><a href="#section-3">主要クラウドプロバイダー</a>
+                        <ul>
+                            <li><a href="#section-3-1">AWS・Azure・GCPの比較</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-4">セキュリティ対策</a></li>
+                    <li><a href="#section-5">コスト最適化</a></li>
+                    <li><a href="#section-6">運用管理とモニタリング</a></li>
+                    <li><a href="#section-7">ハイブリッドクラウド</a></li>
+                    <li><a href="#section-8">災害対策とBCP</a></li>
+                    <li><a href="#section-9">DevOps・CI/CDの実践</a></li>
+                    <li><a href="#section-10">よくある課題と対策</a></li>
+                    <li><a href="#section-11">まとめ</a></li>
+                </ol>
+            </div>
+
+            <section id="section-1">
+                <h2>1. クラウド戦略の基礎</h2>
+                <p>クラウド戦略は、企業のデジタル変革を支える重要な要素です。適切なクラウド活用により、競争力強化とコスト最適化を実現できます。</p>
+                
+                <h3 id="section-1-1">クラウドのメリット</h3>
+                <p>クラウドコンピューティングは、従来のIT基盤と比較して多くのメリットを提供します。</p>
+                
+                <h4>主要なメリット</h4>
+                <ul>
+                    <li><strong>スケーラビリティ</strong>：需要に応じた柔軟な拡張・縮小</li>
+                    <li><strong>コスト効率</strong>：初期投資の削減と従量課金</li>
+                    <li><strong>迅速な導入</strong>：短時間でのサービス開始</li>
+                    <li><strong>高可用性</strong>：冗長化による安定稼働</li>
+                    <li><strong>グローバル展開</strong>：世界規模でのサービス提供</li>
+                </ul>
+                
+                <h4>ビジネスへの影響</h4>
+                <ul>
+                    <li><strong>アジリティ向上</strong>：迅速な市場対応</li>
+                    <li><strong>イノベーション促進</strong>：新技術の活用</li>
+                    <li><strong>リスク軽減</strong>：セキュリティ・災害対策の強化</li>
+                    <li><strong>運用効率化</strong>：管理業務の自動化</li>
+                </ul>
+                
+                <h3 id="section-1-2">クラウドサービスの種類</h3>
+                <p>クラウドサービスは、提供形態により分類されます。</p>
+                
+                <h4>サービスモデル</h4>
+                <ul>
+                    <li><strong>IaaS（Infrastructure as a Service）</strong>：仮想サーバー、ストレージ等</li>
+                    <li><strong>PaaS（Platform as a Service）</strong>：アプリケーション開発・実行基盤</li>
+                    <li><strong>SaaS（Software as a Service）</strong>：完成したアプリケーション</li>
+                    <li><strong>FaaS（Function as a Service）</strong>：サーバーレスコンピューティング</li>
+                </ul>
+                
+                <h4>デプロイメントモデル</h4>
+                <ul>
+                    <li><strong>パブリッククラウド</strong>：一般向けのクラウドサービス</li>
+                    <li><strong>プライベートクラウド</strong>：組織専用のクラウド環境</li>
+                    <li><strong>ハイブリッドクラウド</strong>：パブリックとプライベートの組み合わせ</li>
+                    <li><strong>マルチクラウド</strong>：複数のクラウドプロバイダーの活用</li>
+                </ul>
+            </section>
+
+            <section id="section-2">
+                <h2>2. クラウド移行戦略</h2>
+                <p>既存システムのクラウド移行は、段階的かつ計画的に実施する必要があります。</p>
+                
+                <h3>移行戦略の策定</h3>
+                <ul>
+                    <li><strong>現状分析</strong>：既存システムの評価・棚卸し</li>
+                    <li><strong>目標設定</strong>：移行の目的と期待効果の明確化</li>
+                    <li><strong>優先順位</strong>：移行対象システムの順序決定</li>
+                    <li><strong>スケジュール</strong>：段階的な移行計画の策定</li>
+                </ul>
+                
+                <h3>移行パターン（6R）</h3>
+                <ul>
+                    <li><strong>Rehost（リホスト）</strong>：現状のまま移行（Lift & Shift）</li>
+                    <li><strong>Replatform（リプラットフォーム）</strong>：軽微な最適化</li>
+                    <li><strong>Refactor（リファクタリング）</strong>：クラウドネイティブ化</li>
+                    <li><strong>Repurchase（リパーチェス）</strong>：SaaSへの移行</li>
+                    <li><strong>Retire（リタイア）</strong>：システムの廃止</li>
+                    <li><strong>Retain（リテイン）</strong>：現状維持</li>
+                </ul>
+                
+                <h3>移行プロセス</h3>
+                <ol>
+                    <li><strong>評価・計画</strong>：移行対象の詳細分析</li>
+                    <li><strong>設計</strong>：クラウドアーキテクチャの設計</li>
+                    <li><strong>パイロット</strong>：小規模での実証実験</li>
+                    <li><strong>移行実行</strong>：本格的な移行作業</li>
+                    <li><strong>最適化</strong>：移行後の継続的改善</li>
+                </ol>
+            </section>
+
+            <section id="section-3">
+                <h2>3. 主要クラウドプロバイダー</h2>
+                <p>主要なクラウドプロバイダーの特徴を理解し、適切な選択を行います。</p>
+                
+                <h3 id="section-3-1">AWS・Azure・GCPの比較</h3>
+                <p>三大クラウドプロバイダーの特徴と適用領域を比較します。</p>
+                
+                <h4>Amazon Web Services（AWS）</h4>
+                <ul>
+                    <li><strong>特徴</strong>：最も豊富なサービス・機能</li>
+                    <li><strong>強み</strong>：スタートアップから大企業まで幅広い対応</li>
+                    <li><strong>適用領域</strong>：Webアプリケーション、データ分析、機械学習</li>
+                    <li><strong>主要サービス</strong>：EC2、S3、RDS、Lambda</li>
+                </ul>
+                
+                <h4>Microsoft Azure</h4>
+                <ul>
+                    <li><strong>特徴</strong>：Microsoft製品との優れた連携</li>
+                    <li><strong>強み</strong>：エンタープライズ向け機能の充実</li>
+                    <li><strong>適用領域</strong>：Windows環境、.NET開発、Office365連携</li>
+                    <li><strong>主要サービス</strong>：Virtual Machines、Storage、SQL Database</li>
+                </ul>
+                
+                <h4>Google Cloud Platform（GCP）</h4>
+                <ul>
+                    <li><strong>特徴</strong>：AI・機械学習の先進的サービス</li>
+                    <li><strong>強み</strong>：データ分析・AI分野の技術力</li>
+                    <li><strong>適用領域</strong>：データ分析、AI/ML、コンテナアプリケーション</li>
+                    <li><strong>主要サービス</strong>：Compute Engine、BigQuery、Kubernetes Engine</li>
+                </ul>
+                
+                <h3>選択基準</h3>
+                <ul>
+                    <li><strong>既存システム</strong>：現在の技術スタックとの親和性</li>
+                    <li><strong>サービス要件</strong>：必要な機能・性能の提供状況</li>
+                    <li><strong>コスト</strong>：初期費用・運用費用の比較</li>
+                    <li><strong>地理的要件</strong>：データセンターの場所・規制対応</li>
+                </ul>
+            </section>
+
+            <section id="section-4">
+                <h2>4. セキュリティ対策</h2>
+                <p>クラウドセキュリティは、責任共有モデルに基づいて適切に実装する必要があります。</p>
+                
+                <h3>責任共有モデル</h3>
+                <ul>
+                    <li><strong>クラウドプロバイダー</strong>：物理的インフラ、ネットワーク制御</li>
+                    <li><strong>利用者</strong>：アプリケーション、データ、ID管理</li>
+                    <li><strong>共有責任</strong>：OS、ネットワーク設定、暗号化</li>
+                </ul>
+                
+                <h3>セキュリティ対策</h3>
+                <ul>
+                    <li><strong>アクセス制御</strong>：IAM（Identity and Access Management）</li>
+                    <li><strong>ネットワークセキュリティ</strong>：VPC、ファイアウォール、WAF</li>
+                    <li><strong>暗号化</strong>：保存時・転送時の暗号化</li>
+                    <li><strong>監査ログ</strong>：アクセス・操作の記録</li>
+                </ul>
+                
+                <h3>セキュリティベストプラクティス</h3>
+                <ul>
+                    <li><strong>最小権限の原則</strong>：必要最小限の権限付与</li>
+                    <li><strong>多要素認証</strong>：MFAの必須化</li>
+                    <li><strong>定期的な監査</strong>：セキュリティ設定の定期確認</li>
+                    <li><strong>インシデント対応</strong>：セキュリティ侵害時の対応手順</li>
+                </ul>
+            </section>
+
+            <section id="section-5">
+                <h2>5. コスト最適化</h2>
+                <p>クラウドコストの管理と最適化は、継続的な取り組みが必要です。</p>
+                
+                <h3>コスト構造の理解</h3>
+                <ul>
+                    <li><strong>コンピューティング</strong>：仮想サーバー、コンテナ</li>
+                    <li><strong>ストレージ</strong>：データ保存・アクセス</li>
+                    <li><strong>ネットワーク</strong>：データ転送・通信</li>
+                    <li><strong>サービス</strong>：マネージドサービス利用</li>
+                </ul>
+                
+                <h3>コスト最適化手法</h3>
+                <ul>
+                    <li><strong>リソース調整</strong>：使用量に応じた自動スケーリング</li>
+                    <li><strong>予約インスタンス</strong>：長期利用による割引</li>
+                    <li><strong>スポットインスタンス</strong>：余剰リソースの活用</li>
+                    <li><strong>ストレージ最適化</strong>：適切なストレージクラスの選択</li>
+                </ul>
+                
+                <h3>コスト管理ツール</h3>
+                <ul>
+                    <li><strong>コスト可視化</strong>：詳細なコスト分析とレポート</li>
+                    <li><strong>予算設定</strong>：コスト上限の設定とアラート</li>
+                    <li><strong>使用量監視</strong>：リソース使用状況の監視</li>
+                    <li><strong>推奨事項</strong>：コスト削減提案の自動生成</li>
+                </ul>
+            </section>
+
+            <section id="section-6">
+                <h2>6. 運用管理とモニタリング</h2>
+                <p>クラウド環境の安定運用には、適切な監視と管理が不可欠です。</p>
+                
+                <h3>監視項目</h3>
+                <ul>
+                    <li><strong>パフォーマンス</strong>：CPU、メモリ、ディスク使用率</li>
+                    <li><strong>可用性</strong>：サービスの稼働状況</li>
+                    <li><strong>セキュリティ</strong>：不正アクセス・異常検知</li>
+                    <li><strong>コスト</strong>：リソース使用量・費用</li>
+                </ul>
+                
+                <h3>運用自動化</h3>
+                <ul>
+                    <li><strong>オートスケーリング</strong>：負荷に応じたリソース調整</li>
+                    <li><strong>バックアップ</strong>：データの定期バックアップ</li>
+                    <li><strong>パッチ管理</strong>：セキュリティ更新の自動適用</li>
+                    <li><strong>アラート</strong>：異常時の自動通知</li>
+                </ul>
+                
+                <h3>運用ツール</h3>
+                <ul>
+                    <li><strong>CloudWatch（AWS）</strong>：総合的な監視サービス</li>
+                    <li><strong>Azure Monitor</strong>：Azure環境の監視</li>
+                    <li><strong>Stackdriver（GCP）</strong>：ログ・メトリクス監視</li>
+                    <li><strong>サードパーティツール</strong>：Datadog、New Relic等</li>
+                </ul>
+            </section>
+
+            <section id="section-7">
+                <h2>7. ハイブリッドクラウド</h2>
+                <p>ハイブリッドクラウドは、オンプレミスとクラウドの両方の利点を活用する戦略です。</p>
+                
+                <h3>ハイブリッドクラウドの利点</h3>
+                <ul>
+                    <li><strong>柔軟性</strong>：ワークロードに応じた最適配置</li>
+                    <li><strong>コスト効率</strong>：既存投資の活用</li>
+                    <li><strong>規制対応</strong>：データ保管場所の制御</li>
+                    <li><strong>段階的移行</strong>：リスクを抑えた移行</li>
+                </ul>
+                
+                <h3>実装パターン</h3>
+                <ul>
+                    <li><strong>バースト拡張</strong>：ピーク時のクラウド活用</li>
+                    <li><strong>災害対策</strong>：DR拠点としてのクラウド</li>
+                    <li><strong>開発・テスト</strong>：開発環境のクラウド化</li>
+                    <li><strong>データ分析</strong>：分析処理のクラウド活用</li>
+                </ul>
+                
+                <h3>技術的考慮事項</h3>
+                <ul>
+                    <li><strong>ネットワーク接続</strong>：VPN、専用線の設定</li>
+                    <li><strong>データ同期</strong>：オンプレミスとクラウド間の同期</li>
+                    <li><strong>統合管理</strong>：一元的な運用管理</li>
+                    <li><strong>セキュリティ</strong>：一貫したセキュリティポリシー</li>
+                </ul>
+            </section>
+
+            <section id="section-8">
+                <h2>8. 災害対策とBCP</h2>
+                <p>クラウドを活用した災害対策とBCP（事業継続計画）の構築が重要です。</p>
+                
+                <h3>災害対策の基本</h3>
+                <ul>
+                    <li><strong>RTO（Recovery Time Objective）</strong>：目標復旧時間</li>
+                    <li><strong>RPO（Recovery Point Objective）</strong>：目標復旧時点</li>
+                    <li><strong>可用性目標</strong>：サービスレベルの設定</li>
+                    <li><strong>リスク評価</strong>：災害リスクの分析</li>
+                </ul>
+                
+                <h3>クラウドDR戦略</h3>
+                <ul>
+                    <li><strong>バックアップ・リストア</strong>：定期バックアップと復元</li>
+                    <li><strong>パイロットライト</strong>：最小限の待機環境</li>
+                    <li><strong>ウォームスタンバイ</strong>：縮小版の待機環境</li>
+                    <li><strong>ホットスタンバイ</strong>：完全な待機環境</li>
+                </ul>
+                
+                <h3>BCP実施手順</h3>
+                <ol>
+                    <li><strong>リスク分析</strong>：想定される災害・障害の特定</li>
+                    <li><strong>対策設計</strong>：復旧手順と体制の構築</li>
+                    <li><strong>テスト実施</strong>：定期的な復旧テスト</li>
+                    <li><strong>継続改善</strong>：テスト結果に基づく改善</li>
+                </ol>
+            </section>
+
+            <section id="section-9">
+                <h2>9. DevOps・CI/CDの実践</h2>
+                <p>クラウドネイティブな開発・運用手法の実践により、開発効率を向上させます。</p>
+                
+                <h3>DevOpsの基本概念</h3>
+                <ul>
+                    <li><strong>開発と運用の連携</strong>：チーム間の協力促進</li>
+                    <li><strong>自動化</strong>：反復作業の自動化</li>
+                    <li><strong>継続的改善</strong>：フィードバックサイクルの短縮</li>
+                    <li><strong>文化の変革</strong>：組織文化の変革</li>
+                </ul>
+                
+                <h3>CI/CDパイプライン</h3>
+                <ul>
+                    <li><strong>継続的インテグレーション</strong>：コードの自動テスト・統合</li>
+                    <li><strong>継続的デプロイメント</strong>：自動デプロイメント</li>
+                    <li><strong>インフラストラクチャ・アズ・コード</strong>：インフラの自動化</li>
+                    <li><strong>監視・フィードバック</strong>：運用状況の可視化</li>
+                </ul>
+                
+                <h3>主要ツール</h3>
+                <ul>
+                    <li><strong>ソース管理</strong>：Git、GitHub、GitLab</li>
+                    <li><strong>CI/CD</strong>：Jenkins、GitLab CI、AWS CodePipeline</li>
+                    <li><strong>コンテナ</strong>：Docker、Kubernetes</li>
+                    <li><strong>IaC</strong>：Terraform、CloudFormation</li>
+                </ul>
+            </section>
+
+            <section id="section-10">
+                <h2>10. よくある課題と対策</h2>
+                <p>クラウド導入・運用で発生しやすい課題とその対策を理解し、効果的に対処します。</p>
+                
+                <h3>よくある課題</h3>
+                <ul>
+                    <li><strong>コスト超過</strong>：予想以上のコスト発生</li>
+                    <li><strong>セキュリティ設定ミス</strong>：不適切な権限設定</li>
+                    <li><strong>パフォーマンス問題</strong>：期待した性能が出ない</li>
+                    <li><strong>スキル不足</strong>：クラウド技術の知識不足</li>
+                </ul>
+                
+                <h3>効果的な対策</h3>
+                <ul>
+                    <li><strong>継続的な監視</strong>：コスト・パフォーマンスの定期確認</li>
+                    <li><strong>セキュリティ自動化</strong>：設定ミスの防止</li>
+                    <li><strong>段階的移行</strong>：リスクを抑えた移行</li>
+                    <li><strong>教育・トレーニング</strong>：継続的なスキル向上</li>
+                </ul>
+            </section>
+
+            <section id="section-11">
+                <h2>11. まとめ</h2>
+                <p>クラウド活用とインフラ戦略は、現代企業の競争力強化に不可欠な要素です。</p>
+                
+                <h3>重要なポイント</h3>
+                <ul>
+                    <li><strong>戦略的計画</strong>：明確な目標と段階的な実行</li>
+                    <li><strong>セキュリティ重視</strong>：責任共有モデルの理解</li>
+                    <li><strong>コスト管理</strong>：継続的な最適化</li>
+                    <li><strong>継続的改善</strong>：運用の自動化と効率化</li>
+                </ul>
+                
+                <p>クラウドインフラ戦略は、技術的な観点だけでなく、ビジネス戦略との整合性も重要です。組織の成熟度に応じて段階的に導入し、継続的に改善することで、クラウドの真の価値を実現できます。</p>
+            </section>
+
+            <div class="article-tags">
+                <h3>関連タグ</h3>
+                <div class="tags">
+                    <span class="tag">#起業</span>
+                    <span class="tag">#クラウド</span>
+                    <span class="tag">#インフラ</span>
+                    <span class="tag">#AWS</span>
+                    <span class="tag">#Azure</span>
+                    <span class="tag">#GCP</span>
+                    <span class="tag">#DevOps</span>
+                </div>
+            </div>
+
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
+                </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <h3>最新記事</h3>
+            <ul>
+                <li><a href="funding-guide.html">資金調達の方法と注意点：スタートアップのための完全ガイド</a></li>
+                <li><a href="tax-accounting-guide.html">税務・会計の基礎知識：会社設立後に知っておくべき重要ポイント</a></li>
+                <li><a href="company-establishment-guide.html">会社設立完全ガイド：初心者でもわかる設立手続きと成功のポイント</a></li>
+            </ul>
+
+            <h3>カテゴリ</h3>
+            <ul>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
+            </ul>
+
+            <h3>お役立ちリンク</h3>
+            <ul>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の技術的アドバイスではありません。</p>
+    </footer>
+
+    <script>
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('クラウド活用とインフラ戦略：効率的なIT基盤の構築');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=クラウド,AWS,起業,起業ラボ`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('クラウド活用とインフラ戦略：効率的なIT基盤の構築');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('クラウド活用とインフラ戦略：効率的なIT基盤の構築');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
+            });
+        }
+
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
+
+        // ハンバーガーメニュー機能
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

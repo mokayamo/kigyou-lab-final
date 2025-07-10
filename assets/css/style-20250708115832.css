@@ -16,7 +16,7 @@ body {
 
 /* ヘッダー */
 header {
-    background: #5EEF39 !important;
+    background: #4CAF50 !important;
     color: white;
     padding: 0.7rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -146,7 +146,7 @@ main {
 .sidebar h3 {
     margin-bottom: 1rem;
     color: #333;
-    border-bottom: 2px solid #5EEF39;
+    border-bottom: 2px solid #7fb069;
     padding-bottom: 0.5rem;
 }
 
@@ -174,7 +174,7 @@ h1 {
     color: #333;
     margin-bottom: 1rem;
     font-size: 2.2rem;
-    border-bottom: 3px solid #5EEF39;
+    border-bottom: 3px solid #5d8a6b;
     padding-bottom: 0.5rem;
 }
 
@@ -182,7 +182,7 @@ h2 {
     color: #333;
     margin: 2rem 0 1rem 0;
     font-size: 1.5rem;
-    border-left: 4px solid #5EEF39;
+    border-left: 4px solid #5d8a6b;
     padding-left: 0.8rem;
 }
 
@@ -198,7 +198,7 @@ h3 {
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 2rem;
-    border-left: 4px solid #5EEF39;
+    border-left: 4px solid #5d8a6b;
 }
 
 .article-meta p {
@@ -259,14 +259,14 @@ th, td {
 }
 
 th {
-    background: #5EEF39;
+    background: #8bc34a;
     color: white;
 }
 
 /* ボタン */
 .btn {
     display: inline-block;
-    background: #5EEF39;
+    background: #8bc34a;
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -277,7 +277,7 @@ th {
 }
 
 .btn:hover {
-    background: #5EEF39;
+    background: #7cb342;
 }
 
 /* フッター */
@@ -392,7 +392,7 @@ footer {
 /* 目次スタイル */
 .table-of-contents {
     background: linear-gradient(135deg, #e8f5e8 0%, #d0e5d0 100%);
-    border: 2px solid #5EEF39;
+    border: 2px solid #5d8a6b;
     border-radius: 10px;
     padding: 1.5rem;
     margin: 2rem 0;
@@ -436,7 +436,7 @@ footer {
 }
 
 .table-of-contents a:hover {
-    color: #5EEF39;
+    color: #7cb342;
     text-decoration: underline;
     padding-left: 0.3rem;
 }
@@ -483,7 +483,7 @@ h2[id], h3[id] {
 }
 
 .article-card h2 a:hover {
-    color: #5EEF39;
+    color: #7cb342;
 }
 
 .article-excerpt {
@@ -493,7 +493,7 @@ h2[id], h3[id] {
 }
 
 .read-more {
-    color: #5EEF39;
+    color: #7cb342;
     text-decoration: none;
     font-weight: bold;
 }
@@ -504,12 +504,15 @@ h2[id], h3[id] {
 
 /* SNSシェアボタン */
 .social-share {
-    margin: 2.5rem -2rem 1.5rem -2rem;
+    margin: 0.2rem 0 0.2rem 0;
     text-align: center;
     position: relative;
     z-index: 1;
-    background: transparent;
+    background: transparent !important;
     padding: 1rem 0;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 .social-share h3 {
@@ -590,7 +593,7 @@ h2[id], h3[id] {
 /* モバイル対応 */
 @media (max-width: 768px) {
     .social-share {
-        margin: 2rem -1.5rem 1rem -1.5rem;
+        margin: 0.1rem -1.5rem 0.1rem -1.5rem;
     }
     
     .share-buttons {
@@ -610,15 +613,19 @@ h2[id], h3[id] {
 
 /* 記事一覧へ戻るボタン */
 .back-to-articles {
-    margin: 3rem 0 2rem 0;
+    margin: 0.2rem 0 2rem 0;
     text-align: center;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 .back-button {
     display: inline-flex;
     align-items: center;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(135deg, #5EEF39 0%, #7CB342 100%);
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -631,7 +638,7 @@ h2[id], h3[id] {
 .back-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(74, 124, 89, 0.3);
-    background: linear-gradient(135deg, #5EEF39 0%, #7CB342 100%);
+    background: linear-gradient(135deg, #7cb342 0%, #8bc34a 100%);
 }
 
 .back-button::before {
@@ -642,30 +649,47 @@ h2[id], h3[id] {
 
 /* 記事タグ */
 .article-tags {
-    margin: 1.5rem 0;
-    padding: 0;
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    display: block;
-    width: auto;
+    margin: 1.5rem 0 0.2rem 0 !important;
+    padding: 1rem !important;
+    background: #fafafa !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 5px !important;
+}
+
+/* 税務・会計記事専用：ソーシャルシェアと記事一覧に戻るの背景を強制的に透明に */
+body:has([href*="tax-accounting-guide"]) .social-share,
+body:has([title*="税務・会計"]) .social-share,
+.social-share {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 1rem 0 !important;
+}
+
+body:has([href*="tax-accounting-guide"]) .back-to-articles,
+body:has([title*="税務・会計"]) .back-to-articles,
+.back-to-articles {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0.2rem 0 2rem 0 !important;
 }
 
 .article-tags h3 {
-    margin: 0 0.8rem 0 0;
+    margin: 0 0 0.8rem 0;
     color: #666;
     font-size: 0.9rem;
     font-weight: normal;
     border: none;
     padding: 0;
-    display: inline-block;
 }
 
 .tags {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
-    width: auto;
 }
 
 .tag {
@@ -688,7 +712,7 @@ h2[id], h3[id] {
 /* モバイル対応 */
 @media (max-width: 768px) {
     .article-tags {
-        margin: 1.5rem 0;
+        margin: 1rem 0 0.1rem 0;
         padding: 0.8rem;
     }
     
@@ -698,7 +722,7 @@ h2[id], h3[id] {
     }
     
     .back-to-articles {
-        margin: 2rem 0 1.5rem 0;
+        margin: 0.1rem 0 1.5rem 0;
     }
     
     .back-button {
@@ -706,3 +730,4 @@ h2[id], h3[id] {
         font-size: 0.95rem;
     }
 }
+
