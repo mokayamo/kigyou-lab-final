@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPR・個人情報保護：プライバシー規制の実務対応 | 起業ラボ</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="個人情報保護規制の実践ガイド。GDPR対応、日本の個人情報保護法、データガバナンス、プライバシーバイデザイン、国際データ移転など、プライバシー保護の実務手法を詳しく解説します。">
+    <meta name="keywords" content="GDPR,個人情報保護法,プライバシー規制,データガバナンス,プライバシーバイデザイン,国際データ移転,データ保護,コンプライアンス">
+    <meta name="author" content="起業ラボ">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html">
+    <meta property="og:title" content="GDPR・個人情報保護：プライバシー規制の実務対応">
+    <meta property="og:description" content="個人情報保護規制の実践ガイド。GDPR対応、日本の個人情報保護法、データガバナンス、プライバシーバイデザイン、国際データ移転など、プライバシー保護の実務手法を詳しく解説します。">
+    <meta property="og:image" content="https://kigyou-lab.vercel.app/assets/images/gdpr-privacy-compliance-guide-ogp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="起業ラボ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-07-11T00:00:00+09:00">
+    <meta property="article:modified_time" content="2025-07-11T00:00:00+09:00">
+    <meta property="article:author" content="起業ラボ">
+    <meta property="article:section" content="法務・コンプライアンス">
+    <meta property="article:tag" content="起業">
+    <meta property="article:tag" content="GDPR">
+    <meta property="article:tag" content="個人情報保護">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html">
+    <meta property="twitter:title" content="GDPR・個人情報保護：プライバシー規制の実務対応">
+    <meta property="twitter:description" content="個人情報保護規制の実践ガイド。GDPR対応、日本の個人情報保護法、データガバナンス、プライバシーバイデザイン、国際データ移転など、プライバシー保護の実務手法を詳しく解説します。">
+    <meta property="twitter:image" content="https://kigyou-lab.vercel.app/assets/images/gdpr-privacy-compliance-guide-ogp.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style-20250708115832.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">起業ラボ</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../articles.html">記事一覧</a></li>
+                    <li><a href="../about.html">ブログについて</a></li>
+                    <li><a href="../contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="content">
+            <h1>GDPR・個人情報保護：プライバシー規制の実務対応</h1>
+            
+            <div style="text-align: right; margin-bottom: 1rem;">
+                <p style="font-size: 0.75rem; color: #999; margin: 0;">最終更新: 2025年7月11日</p>
+            </div>
+            <div class="table-of-contents">
+                <h2>目次</h2>
+                <ol>
+                    <li><a href="#section-1">個人情報保護の基礎知識</a>
+                        <ul>
+                            <li><a href="#section-1-1">個人情報保護の重要性</a></li>
+                            <li><a href="#section-1-2">主要な法規制の概要</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-2">GDPR（EU一般データ保護規則）対応</a></li>
+                    <li><a href="#section-3">日本の個人情報保護法</a>
+                        <ul>
+                            <li><a href="#section-3-1">2022年改正の主なポイント</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-4">データガバナンス体制の構築</a></li>
+                    <li><a href="#section-5">プライバシーバイデザインの実践</a></li>
+                    <li><a href="#section-6">国際データ移転の管理</a></li>
+                    <li><a href="#section-7">データ主体の権利への対応</a></li>
+                    <li><a href="#section-8">データ侵害時の対応手順</a></li>
+                    <li><a href="#section-9">従業員教育とコンプライアンス</a></li>
+                    <li><a href="#section-10">よくある課題と対策</a></li>
+                    <li><a href="#section-11">まとめ</a></li>
+                </ol>
+            </div>
+
+            <section id="section-1">
+                <h2>1. 個人情報保護の基礎知識</h2>
+                <p>デジタル化の進展に伴い、個人情報保護は企業経営における重要な課題となっています。適切な対応により、顧客の信頼を獲得し、法的リスクを回避できます。</p>
+                
+                <h3 id="section-1-1">個人情報保護の重要性</h3>
+                <p>個人情報の適切な管理は、以下の観点から重要です：</p>
+                <ul>
+                    <li><strong>法的義務</strong>：各国の法規制への準拠</li>
+                    <li><strong>顧客信頼</strong>：プライバシー尊重による関係強化</li>
+                    <li><strong>競争優位</strong>：データ保護の質による差別化</li>
+                    <li><strong>リスク管理</strong>：情報漏洩による損失の防止</li>
+                </ul>
+                
+                <h3 id="section-1-2">主要な法規制の概要</h3>
+                <p>企業が対応すべき主要な個人情報保護法制：</p>
+                <ul>
+                    <li><strong>GDPR</strong>：EU圏の包括的データ保護規則</li>
+                    <li><strong>個人情報保護法</strong>：日本の個人情報保護制度</li>
+                    <li><strong>CCPA</strong>：カリフォルニア州消費者プライバシー法</li>
+                    <li><strong>LGPD</strong>：ブラジル一般データ保護法</li>
+                </ul>
+            </section>
+
+            <section id="section-2">
+                <h2>2. GDPR（EU一般データ保護規則）対応</h2>
+                <p>GDPRは、EU圏内の個人データ保護を規定する包括的な法規制です。EU圏外の企業も、EU住民のデータを扱う場合は対象となります。</p>
+                
+                <h3>GDPR対応のポイント</h3>
+                <ul>
+                    <li><strong>適法な処理根拠</strong>：6つの処理根拠のいずれかを確立</li>
+                    <li><strong>データ主体の権利</strong>：アクセス権、削除権等への対応</li>
+                    <li><strong>プライバシー通知</strong>：明確で理解しやすい情報提供</li>
+                    <li><strong>データ保護影響評価</strong>：高リスク処理の事前評価</li>
+                    <li><strong>データ保護責任者</strong>：必要に応じたDPOの任命</li>
+                </ul>
+                
+                <h3>制裁措置</h3>
+                <p>GDPR違反に対する制裁金は以下の通りです：</p>
+                <ul>
+                    <li><strong>軽微な違反</strong>：年間売上高の2%または1,000万ユーロ</li>
+                    <li><strong>重大な違反</strong>：年間売上高の4%または2,000万ユーロ</li>
+                </ul>
+            </section>
+
+            <section id="section-3">
+                <h2>3. 日本の個人情報保護法</h2>
+                <p>日本の個人情報保護法は、個人情報の適正な取扱いを定めた法律です。2022年の改正により、規制が強化されました。</p>
+                
+                <h3 id="section-3-1">2022年改正の主なポイント</h3>
+                <ul>
+                    <li><strong>個人関連情報</strong>：個人情報以外の情報も規制対象</li>
+                    <li><strong>越境移転規制</strong>：海外提供時の本人同意等</li>
+                    <li><strong>仮名加工情報</strong>：新たな情報類型の創設</li>
+                    <li><strong>報告義務</strong>：漏洩等事案の報告義務化</li>
+                    <li><strong>罰則強化</strong>：法人に対する罰金上限引き上げ</li>
+                </ul>
+                
+                <h3>対応すべき基本義務</h3>
+                <ul>
+                    <li><strong>利用目的の明示</strong>：取得時の目的通知</li>
+                    <li><strong>適正取得</strong>：不正手段による取得禁止</li>
+                    <li><strong>安全管理措置</strong>：技術的・組織的対策</li>
+                    <li><strong>第三者提供制限</strong>：本人同意等の確保</li>
+                    <li><strong>本人関与</strong>：開示・訂正・削除等への対応</li>
+                </ul>
+            </section>
+
+            <section id="section-4">
+                <h2>4. データガバナンス体制の構築</h2>
+                <p>組織全体でのデータガバナンス体制を構築し、継続的な改善を図ることが重要です。</p>
+                
+                <h3>組織体制の整備</h3>
+                <ul>
+                    <li><strong>データ保護責任者</strong>：専任責任者の設置</li>
+                    <li><strong>プライバシー委員会</strong>：横断的な検討体制</li>
+                    <li><strong>部門担当者</strong>：各部門での推進体制</li>
+                    <li><strong>外部専門家</strong>：法務・技術専門家の活用</li>
+                </ul>
+                
+                <h3>ポリシーと手順の策定</h3>
+                <ul>
+                    <li><strong>プライバシーポリシー</strong>：対外的な方針表明</li>
+                    <li><strong>社内規程</strong>：具体的な取扱い手順</li>
+                    <li><strong>データマップ</strong>：情報の流れの可視化</li>
+                    <li><strong>リスクアセスメント</strong>：定期的なリスク評価</li>
+                </ul>
+            </section>
+
+            <section id="section-5">
+                <h2>5. プライバシーバイデザインの実践</h2>
+                <p>システム設計段階からプライバシー保護を組み込む「プライバシーバイデザイン」の実践が重要です。</p>
+                
+                <h3>7つの基本原則</h3>
+                <ul>
+                    <li><strong>事前予防</strong>：事後対応ではなく事前対策</li>
+                    <li><strong>デフォルト設定</strong>：最大限のプライバシー保護</li>
+                    <li><strong>デザイン組込み</strong>：システム設計への統合</li>
+                    <li><strong>完全な機能性</strong>：機能とプライバシーの両立</li>
+                    <li><strong>エンドツーエンド</strong>：全工程での保護</li>
+                    <li><strong>可視性と透明性</strong>：処理内容の明確化</li>
+                    <li><strong>プライバシー尊重</strong>：個人の利益を最優先</li>
+                </ul>
+                
+                <h3>技術的実装</h3>
+                <ul>
+                    <li><strong>データ最小化</strong>：必要最小限のデータ収集</li>
+                    <li><strong>匿名化・仮名化</strong>：識別可能性の低減</li>
+                    <li><strong>暗号化</strong>：保存・送信時の暗号化</li>
+                    <li><strong>アクセス制御</strong>：適切な権限管理</li>
+                </ul>
+            </section>
+
+            <section id="section-6">
+                <h2>6. 国際データ移転の管理</h2>
+                <p>グローバルビジネスにおいて、国境を越えたデータ移転の適切な管理が必要です。</p>
+                
+                <h3>移転メカニズム</h3>
+                <ul>
+                    <li><strong>十分性認定</strong>：移転先国の保護水準認定</li>
+                    <li><strong>標準契約条項</strong>：EU委員会承認の契約書</li>
+                    <li><strong>拘束的企業準則</strong>：多国籍企業グループ内規則</li>
+                    <li><strong>行動規範・認証</strong>：業界標準への準拠</li>
+                </ul>
+                
+                <h3>日本企業の対応</h3>
+                <ul>
+                    <li><strong>移転先の確認</strong>：移転先国・地域の法制度</li>
+                    <li><strong>適切な保護措置</strong>：契約・技術的対策</li>
+                    <li><strong>本人同意</strong>：必要に応じた同意取得</li>
+                    <li><strong>継続的監視</strong>：移転先での適切な取扱い</li>
+                </ul>
+            </section>
+
+            <section id="section-7">
+                <h2>7. データ主体の権利への対応</h2>
+                <p>個人は自身のデータに対して様々な権利を持ち、企業はこれらの権利行使に適切に対応する必要があります。</p>
+                
+                <h3>主要な権利</h3>
+                <ul>
+                    <li><strong>アクセス権</strong>：処理状況の開示請求</li>
+                    <li><strong>訂正権</strong>：不正確なデータの修正</li>
+                    <li><strong>削除権</strong>：忘れられる権利の行使</li>
+                    <li><strong>処理制限権</strong>：処理の停止・制限</li>
+                    <li><strong>データポータビリティ権</strong>：データの持ち運び</li>
+                    <li><strong>異議申立権</strong>：処理に対する異議</li>
+                </ul>
+                
+                <h3>対応体制の整備</h3>
+                <ul>
+                    <li><strong>受付窓口</strong>：権利行使の受付体制</li>
+                    <li><strong>対応手順</strong>：迅速な対応プロセス</li>
+                    <li><strong>本人確認</strong>：適切な本人認証</li>
+                    <li><strong>記録保持</strong>：対応履歴の管理</li>
+                </ul>
+            </section>
+
+            <section id="section-8">
+                <h2>8. データ侵害時の対応手順</h2>
+                <p>データ侵害が発生した場合の迅速かつ適切な対応により、被害を最小限に抑えることができます。</p>
+                
+                <h3>初動対応</h3>
+                <ul>
+                    <li><strong>事実確認</strong>：侵害の範囲・原因の特定</li>
+                    <li><strong>被害拡大防止</strong>：システム停止等の措置</li>
+                    <li><strong>証拠保全</strong>：ログ・記録の保存</li>
+                    <li><strong>関係者への連絡</strong>：経営陣・責任者への報告</li>
+                </ul>
+                
+                <h3>法的対応</h3>
+                <ul>
+                    <li><strong>監督当局への報告</strong>：72時間以内の報告</li>
+                    <li><strong>本人への通知</strong>：高リスクの場合は個人通知</li>
+                    <li><strong>影響評価</strong>：被害状況の詳細分析</li>
+                    <li><strong>再発防止策</strong>：根本原因の改善</li>
+                </ul>
+                
+                <h3>事後対応</h3>
+                <ul>
+                    <li><strong>システム改修</strong>：脆弱性の修正</li>
+                    <li><strong>体制見直し</strong>：管理体制の強化</li>
+                    <li><strong>教育強化</strong>：従業員への再教育</li>
+                    <li><strong>監査実施</strong>：第三者による検証</li>
+                </ul>
+            </section>
+
+            <section id="section-9">
+                <h2>9. 従業員教育とコンプライアンス</h2>
+                <p>全従業員への継続的な教育により、組織全体のプライバシー意識を向上させることが重要です。</p>
+                
+                <h3>教育プログラム</h3>
+                <ul>
+                    <li><strong>基礎教育</strong>：個人情報保護の基本知識</li>
+                    <li><strong>役割別教育</strong>：職務に応じた専門教育</li>
+                    <li><strong>定期研修</strong>：法改正等への対応</li>
+                    <li><strong>事例研修</strong>：実際の事例を用いた学習</li>
+                </ul>
+                
+                <h3>コンプライアンス体制</h3>
+                <ul>
+                    <li><strong>内部監査</strong>：定期的な遵守状況確認</li>
+                    <li><strong>自己点検</strong>：各部門での自主点検</li>
+                    <li><strong>相談窓口</strong>：疑問・問題の相談体制</li>
+                    <li><strong>報告制度</strong>：違反発見時の報告</li>
+                </ul>
+            </section>
+
+            <section id="section-10">
+                <h2>10. よくある課題と対策</h2>
+                <p>個人情報保護の実務において、企業が直面する主要な課題と対策を整理します。</p>
+                
+                <h3>主要な課題</h3>
+                <ul>
+                    <li><strong>複数法域への対応</strong>：各国法制の違い</li>
+                    <li><strong>技術的複雑性</strong>：システム対応の困難</li>
+                    <li><strong>コスト負担</strong>：対応にかかる費用</li>
+                    <li><strong>業務効率</strong>：プライバシー保護と効率の両立</li>
+                </ul>
+                
+                <h3>効果的な対策</h3>
+                <ul>
+                    <li><strong>段階的実装</strong>：優先順位に基づく実装</li>
+                    <li><strong>専門家活用</strong>：外部リソースの効果的利用</li>
+                    <li><strong>技術投資</strong>：自動化・効率化ツール</li>
+                    <li><strong>継続改善</strong>：PDCAサイクルの実践</li>
+                </ul>
+            </section>
+
+            <section id="section-11">
+                <h2>11. まとめ</h2>
+                <p>個人情報保護は、デジタル時代の企業経営において不可欠な要素です。適切な対応により、顧客の信頼を獲得し、持続的な成長を実現できます。</p>
+                
+                <h3>重要なポイント</h3>
+                <ul>
+                    <li><strong>包括的アプローチ</strong>：法的・技術的・組織的対策の統合</li>
+                    <li><strong>継続的改善</strong>：法改正・技術進歩への対応</li>
+                    <li><strong>全社的取組み</strong>：経営層から現場まで</li>
+                    <li><strong>透明性の確保</strong>：ステークホルダーへの説明責任</li>
+                </ul>
+                
+                <p>個人情報保護への取組みは、単なるコンプライアンスにとどまらず、企業の競争優位性を高める重要な戦略的投資です。プライバシーファーストの考え方を組織に根付かせ、信頼される企業として成長していきましょう。</p>
+            </section>
+
+            <hr>
+
+            <p><em>この記事は一般的な情報提供を目的としており、個別の法的アドバイスではありません。具体的な個人情報保護対策については、専門家にご相談ください。</em></p>
+
+            <div class="article-tags">
+                <h3>関連タグ</h3>
+                <div class="tags">
+                    <span class="tag">#起業</span>
+                    <span class="tag">#GDPR</span>
+                    <span class="tag">#個人情報保護</span>
+                    <span class="tag">#プライバシー</span>
+                    <span class="tag">#コンプライアンス</span>
+                    <span class="tag">#データガバナンス</span>
+                    <span class="tag">#法務</span>
+                    <span class="tag">#リスク管理</span>
+                </div>
+            </div>
+
+            <div class="share-buttons">
+                <h3>この記事をシェア</h3>
+                <div class="social-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html&text=GDPR・個人情報保護：プライバシー規制の実務対応" target="_blank" rel="noopener noreferrer" class="share-btn twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html" target="_blank" rel="noopener noreferrer" class="share-btn facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        Facebook
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html" target="_blank" rel="noopener noreferrer" class="share-btn linkedin">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <h3>最新記事</h3>
+            <ul>
+                <li><a href="leadership-development-guide.html">リーダーシップ開発と組織変革：成長企業の経営手法</a></li>
+                <li><a href="sustainability-esg-guide.html">サステナビリティ経営とESG投資：持続可能な事業成長</a></li>
+                <li><a href="startup-ecosystem-guide.html">スタートアップエコシステムとイノベーション：新しい価値創造</a></li>
+            </ul>
+
+            <h3>関連記事</h3>
+            <ul>
+                <li><a href="compliance-guide.html">規制対応とコンプライアンス体制：法的リスクの予防と管理</a></li>
+                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
+                <li><a href="international-law-guide.html">国際取引法務：グローバルビジネスの法的実務</a></li>
+            </ul>
+
+            <h3>カテゴリ</h3>
+            <ul>
+                <li><a href="../articles.html#legal-section">法務・組織</a></li>
+                <li><a href="../articles.html#management-section">経営・戦略</a></li>
+                <li><a href="../articles.html#technology-section">技術・イノベーション</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
+    </footer>
+
+    <script>
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.classList.add('header-hidden');
+                header.classList.remove('header-visible');
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.add('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // ハンバーガーメニュー
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
