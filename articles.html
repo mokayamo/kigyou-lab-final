@@ -126,8 +126,52 @@
         <div class="content">
             <h1>記事一覧</h1>
             
+            <!-- カテゴリナビゲーション -->
+            <section class="category-navigation">
+                <h2>📚 カテゴリから探す</h2>
+                <div class="category-grid">
+                    <a href="#startup-section" class="category-card startup">
+                        <div class="category-icon">🚀</div>
+                        <h3>起業・設立</h3>
+                        <p class="category-description">会社設立の手続きから税務・会計の基礎知識まで、起業に必要な基本情報をまとめています。</p>
+                        <span class="category-count">5記事</span>
+                    </a>
+                    
+                    <a href="#funding-section" class="category-card funding">
+                        <div class="category-icon">💰</div>
+                        <h3>資金・投資</h3>
+                        <p class="category-description">資金調達の方法からIPO準備まで、事業成長に必要な資金戦略について解説しています。</p>
+                        <span class="category-count">6記事</span>
+                    </a>
+                    
+                    <a href="#management-section" class="category-card management">
+                        <div class="category-icon">📊</div>
+                        <h3>経営・戦略</h3>
+                        <p class="category-description">事業戦略の立案から実行まで、経営管理とマーケティングの実践的な手法を紹介しています。</p>
+                        <span class="category-count">10記事</span>
+                    </a>
+                    
+                    <a href="#legal-section" class="category-card legal">
+                        <div class="category-icon">⚖️</div>
+                        <h3>法務・組織</h3>
+                        <p class="category-description">法的リスクの管理から組織づくりまで、コンプライアンス体制と人事戦略について解説しています。</p>
+                        <span class="category-count">10記事</span>
+                    </a>
+                    
+                    <a href="#technology-section" class="category-card technology">
+                        <div class="category-icon">🔧</div>
+                        <h3>技術・イノベーション</h3>
+                        <p class="category-description">DXやAI活用から最新技術動向まで、デジタル時代のビジネス変革について詳しく説明しています。</p>
+                        <span class="category-count">7記事</span>
+                    </a>
+                </div>
+            </section>
+            
             <section class="articles-list">
-                <h2>会社設立・起業関連記事</h2>
+                <!-- 起業・設立カテゴリ -->
+                <div id="startup-section">
+                    <h2>🚀 起業・設立</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">会社設立の手続きから税務・会計の基礎知識まで、起業に必要な基本情報をまとめています。</p>
                 
                 <article class="article-card">
                     <h2><a href="articles/marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></h2>
@@ -177,6 +221,13 @@
                     <a href="articles/tax-accounting-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
+                </div>
+                
+                <!-- 資金・投資セクション -->
+                <div id="funding-section">
+                    <h2>💰 資金・投資</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">資金調達の方法からIPO準備まで、事業成長に必要な資金戦略について解説しています。</p>
+                
                 <article class="article-card">
                     <h2><a href="articles/funding-guide.html">資金調達の方法と注意点：スタートアップのための完全ガイド</a></h2>
                     <div class="article-excerpt">
@@ -184,6 +235,83 @@
                         クラウドファンディング、助成金など各手法の特徴と注意点を詳しく解説します。
                     </div>
                     <a href="articles/funding-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/investment-valuation-guide.html">投資ラウンドとバリュエーション：スタートアップ資金調達の実践</a></h2>
+                    <div class="article-excerpt">
+                        スタートアップ投資の完全ガイド。シード・シリーズA/B/C各ラウンドの特徴、企業価値算定手法、
+                        投資契約の注意点、株式希薄化対策など、資金調達の実践知識を詳しく解説します。
+                    </div>
+                    <a href="articles/investment-valuation-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/ipo-preparation-guide.html">IPO準備ガイド：上場に向けた準備プロセス</a></h2>
+                    <div class="article-excerpt">
+                        株式上場準備の完全ガイド。内部統制構築、監査法人選定、主幹事証券会社との調整、
+                        IR戦略策定、上場審査対応など、IPO実現のための準備プロセスを詳しく解説します。
+                    </div>
+                    <a href="articles/ipo-preparation-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/subsidies-grants-guide.html">補助金・助成金活用術：スタートアップが使える公的支援制度</a></h2>
+                    <div class="article-excerpt">
+                        公的支援制度活用の完全ガイド。IT導入補助金、ものづくり補助金、小規模事業者持続化補助金、
+                        創業支援制度、研究開発税制など、スタートアップが活用できる支援制度を詳しく解説します。
+                    </div>
+                    <a href="articles/subsidies-grants-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/financial-analysis-guide.html">財務諸表の読み方：経営判断に活かす財務分析</a></h2>
+                    <div class="article-excerpt">
+                        財務分析の実践ガイド。貸借対照表・損益計算書・キャッシュフロー計算書の読み方、
+                        財務比率分析、投資判断指標など、経営に活かす財務分析手法を詳しく解説します。
+                    </div>
+                    <a href="articles/financial-analysis-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/investor-relations-guide.html">企業価値評価と株主対応：投資家との関係構築</a></h2>
+                    <div class="article-excerpt">
+                        IR・投資家対応の実践ガイド。企業価値算定手法、IR戦略策定、株主総会運営、
+                        配当政策、投資家プレゼンテーションなど、効果的な投資家関係構築の手法を詳しく解説します。
+                    </div>
+                    <a href="articles/investor-relations-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/cashflow-management-guide.html">キャッシュフロー管理と資金繰り：健全な財務運営の実践</a></h2>
+                    <div class="article-excerpt">
+                        現金収支の把握、予測、改善手法から財務健全性の確保まで、経営者が知るべき財務運営の基本を詳しく解説します。
+                    </div>
+                    <a href="articles/cashflow-management-guide.html" class="read-more">続きを読む →</a>
+                </article>
+                </div>
+                
+                <!-- 経営・戦略セクション -->
+                <div id="management-section">
+                    <h2>📊 経営・戦略</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">事業戦略の立案から実行まで、経営管理とマーケティングの実践的な手法を紹介しています。</p>
+                
+                <article class="article-card">
+                    <h2><a href="articles/marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></h2>
+                    <div class="article-excerpt">
+                        スタートアップのためのマーケティング戦略完全ガイド。デジタルマーケティング、コンテンツマーケティング、SNS活用、
+                        顧客分析、ブランド構築など、効果的な顧客獲得とブランディングの手法を詳しく解説します。
+                    </div>
+                    <a href="articles/marketing-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/management-guide.html">経営管理の基礎：効率的な会社運営のためのツールと手法</a></h2>
+                    <div class="article-excerpt">
+                        効率的な会社運営のための経営管理完全ガイド。組織づくり、人事制度設計、業績管理、ITツール活用、
+                        リモートワーク体制構築など、成長企業に必要な管理体制の作り方を詳しく解説します。
+                    </div>
+                    <a href="articles/management-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
@@ -214,39 +342,12 @@
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/recruitment-strategy-guide.html">採用戦略と人材確保：優秀な人材を獲得する方法</a></h2>
-                    <div class="article-excerpt">
-                        人材獲得戦略の完全ガイド。採用計画の策定と実行、求人媒体の選択と活用、面接・選考プロセス設計、
-                        雇用条件設定と交渉、リファラル採用とダイレクトリクルーティングなど、効果的な人材確保手法を詳しく解説します。
-                    </div>
-                    <a href="articles/recruitment-strategy-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/organizational-culture-guide.html">組織文化とチームビルディング：強い組織をつくる手法</a></h2>
-                    <div class="article-excerpt">
-                        組織力強化の完全ガイド。企業文化の設計と浸透、チームビルディング手法、コミュニケーション活性化、
-                        従業員エンゲージメント向上、リーダーシップ開発など、強固な組織構築の手法を詳しく解説します。
-                    </div>
-                    <a href="articles/organizational-culture-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
                     <h2><a href="articles/business-scaling-guide.html">事業拡大とスケーリング：持続的成長の実現</a></h2>
                     <div class="article-excerpt">
                         スケーリング戦略の完全ガイド。成長戦略の策定と実行、事業領域の拡張手法、新規事業開発、
                         M&A戦略と実行、海外展開の基礎など、持続的な事業成長を実現する手法を詳しく解説します。
                     </div>
                     <a href="articles/business-scaling-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/digital-transformation-guide.html">デジタル変革（DX）の実践：テクノロジー活用による競争力強化</a></h2>
-                    <div class="article-excerpt">
-                        DX実践の完全ガイド。DX戦略の策定、業務プロセスのデジタル化、AI・自動化の導入、
-                        データ活用と分析、セキュリティ対策など、デジタル技術を活用した競争力強化手法を詳しく解説します。
-                    </div>
-                    <a href="articles/digital-transformation-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
@@ -286,39 +387,81 @@
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/financial-analysis-guide.html">財務諸表の読み方：経営判断に活かす財務分析</a></h2>
+                    <h2><a href="articles/global-expansion-guide.html">越境EC・国際展開：海外市場参入の実践ガイド</a></h2>
                     <div class="article-excerpt">
-                        財務分析の実践ガイド。貸借対照表・損益計算書・キャッシュフロー計算書の読み方、
-                        財務比率分析、投資判断指標など、経営に活かす財務分析手法を詳しく解説します。
+                        海外展開の実践ガイド。市場調査・参入戦略策定、越境EC構築、国際物流・決済システム、
+                        現地法人設立、文化適応マーケティングなど、グローバル展開の実践手法を詳しく解説します。
                     </div>
-                    <a href="articles/financial-analysis-guide.html" class="read-more">続きを読む →</a>
+                    <a href="articles/global-expansion-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/investment-valuation-guide.html">投資ラウンドとバリュエーション：スタートアップ資金調達の実践</a></h2>
+                    <h2><a href="articles/business-strategy-guide.html">事業戦略立案と実行：競争優位性を築く戦略策定手法</a></h2>
                     <div class="article-excerpt">
-                        スタートアップ投資の完全ガイド。シード・シリーズA/B/C各ラウンドの特徴、企業価値算定手法、
-                        投資契約の注意点、株式希薄化対策など、資金調達の実践知識を詳しく解説します。
+                        戦略策定の実践ガイド。戦略フレームワーク活用、競争分析手法、差別化戦略の構築、
+                        戦略実行管理、KPI設計など、持続的な競争優位性を築く戦略策定の手法を詳しく解説します。
                     </div>
-                    <a href="articles/investment-valuation-guide.html" class="read-more">続きを読む →</a>
+                    <a href="articles/business-strategy-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/ipo-preparation-guide.html">IPO準備ガイド：上場に向けた準備プロセス</a></h2>
+                    <h2><a href="articles/crisis-management-guide.html">危機管理と事業継続計画：予期せぬリスクへの対応策</a></h2>
                     <div class="article-excerpt">
-                        株式上場準備の完全ガイド。内部統制構築、監査法人選定、主幹事証券会社との調整、
-                        IR戦略策定、上場審査対応など、IPO実現のための準備プロセスを詳しく解説します。
+                        危機管理の実践ガイド。BCP策定手法、危機対応体制構築、レピュテーションリスク管理、
+                        災害対策、サプライチェーンリスク対応など、事業継続性確保のための手法を詳しく解説します。
                     </div>
-                    <a href="articles/ipo-preparation-guide.html" class="read-more">続きを読む →</a>
+                    <a href="articles/crisis-management-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/subsidies-grants-guide.html">補助金・助成金活用術：スタートアップが使える公的支援制度</a></h2>
+                    <h2><a href="articles/sustainability-esg-guide.html">サステナビリティ経営とESG投資：持続可能な事業成長</a></h2>
                     <div class="article-excerpt">
-                        公的支援制度活用の完全ガイド。IT導入補助金、ものづくり補助金、小規模事業者持続化補助金、
-                        創業支援制度、研究開発税制など、スタートアップが活用できる支援制度を詳しく解説します。
+                        ESG経営の実践ガイド。環境経営とカーボンニュートラル、社会的責任とステークホルダー経営、
+                        ガバナンス強化、ESG投資対応など、持続可能な事業成長の手法を詳しく解説します。
                     </div>
-                    <a href="articles/subsidies-grants-guide.html" class="read-more">続きを読む →</a>
+                    <a href="articles/sustainability-esg-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/leadership-development-guide.html">リーダーシップ開発と組織変革：成長企業の経営手法</a></h2>
+                    <div class="article-excerpt">
+                        リーダーシップ開発の実践ガイド。ビジョナリーリーダーシップ、組織変革マネジメント、チームエンゲージメント、
+                        パフォーマンス管理、イノベーション促進など、成長企業の経営手法を詳しく解説します。
+                    </div>
+                    <a href="articles/leadership-development-guide.html" class="read-more">続きを読む →</a>
+                </article>
+                </div>
+                
+                <!-- 法務・組織セクション -->
+                <div id="legal-section">
+                    <h2>⚖️ 法務・組織</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">法的リスクの管理から組織づくりまで、コンプライアンス体制と人事戦略について解説しています。</p>
+                
+                <article class="article-card">
+                    <h2><a href="articles/legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></h2>
+                    <div class="article-excerpt">
+                        起業家のための法務・契約書完全ガイド。雇用契約書、業務委託契約書、秘密保持契約書の作成ポイント、
+                        知的財産権の保護、コンプライアンス体制の構築など法的リスクを避けるための実践的な知識を詳しく解説します。
+                    </div>
+                    <a href="articles/legal-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/recruitment-strategy-guide.html">採用戦略と人材確保：優秀な人材を獲得する方法</a></h2>
+                    <div class="article-excerpt">
+                        人材獲得戦略の完全ガイド。採用計画の策定と実行、求人媒体の選択と活用、面接・選考プロセス設計、
+                        雇用条件設定と交渉、リファラル採用とダイレクトリクルーティングなど、効果的な人材確保手法を詳しく解説します。
+                    </div>
+                    <a href="articles/recruitment-strategy-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/organizational-culture-guide.html">組織文化とチームビルディング：強い組織をつくる手法</a></h2>
+                    <div class="article-excerpt">
+                        組織力強化の完全ガイド。企業文化の設計と浸透、チームビルディング手法、コミュニケーション活性化、
+                        従業員エンゲージメント向上、リーダーシップ開発など、強固な組織構築の手法を詳しく解説します。
+                    </div>
+                    <a href="articles/organizational-culture-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
@@ -349,68 +492,6 @@
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/global-expansion-guide.html">越境EC・国際展開：海外市場参入の実践ガイド</a></h2>
-                    <div class="article-excerpt">
-                        海外展開の実践ガイド。市場調査・参入戦略策定、越境EC構築、国際物流・決済システム、
-                        現地法人設立、文化適応マーケティングなど、グローバル展開の実践手法を詳しく解説します。
-                    </div>
-                    <a href="articles/global-expansion-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/ai-iot-guide.html">AI・IoT活用術：中小企業でもできるスマート化戦略</a></h2>
-                    <div class="article-excerpt">
-                        AI・IoT導入の実践ガイド。業務自動化・効率化、予測分析・需要予測、チャットボット導入、
-                        IoTセンサー活用、クラウドAIサービス利用など、中小企業向けスマート化戦略を詳しく解説します。
-                    </div>
-                    <a href="articles/ai-iot-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/sustainability-management-guide.html">サステナビリティ経営：ESG・SDGsを経営に活かす方法</a></h2>
-                    <div class="article-excerpt">
-                        持続可能経営の実践ガイド。ESG経営の基礎、SDGs目標との連携、サステナビリティレポート作成、
-                        環境・社会貢献活動の設計、ステークホルダーエンゲージメントなど、持続可能な経営手法を詳しく解説します。
-                    </div>
-                    <a href="articles/sustainability-management-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/business-strategy-guide.html">事業戦略立案と実行：競争優位性を築く戦略策定手法</a></h2>
-                    <div class="article-excerpt">
-                        戦略策定の実践ガイド。戦略フレームワーク活用、競争分析手法、差別化戦略の構築、
-                        戦略実行管理、KPI設計など、持続的な競争優位性を築く戦略策定の手法を詳しく解説します。
-                    </div>
-                    <a href="articles/business-strategy-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/crisis-management-guide.html">危機管理と事業継続計画：予期せぬリスクへの対応策</a></h2>
-                    <div class="article-excerpt">
-                        危機管理の実践ガイド。BCP策定手法、危機対応体制構築、レピュテーションリスク管理、
-                        災害対策、サプライチェーンリスク対応など、事業継続性確保のための手法を詳しく解説します。
-                    </div>
-                    <a href="articles/crisis-management-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/cashflow-management-guide.html">キャッシュフロー管理と資金繰り：健全な財務運営の実践</a></h2>
-                    <div class="article-excerpt">
-                        現金収支の把握、予測、改善手法から財務健全性の確保まで、経営者が知るべき財務運営の基本を詳しく解説します。
-                    </div>
-                    <a href="articles/cashflow-management-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/investor-relations-guide.html">企業価値評価と株主対応：投資家との関係構築</a></h2>
-                    <div class="article-excerpt">
-                        IR・投資家対応の実践ガイド。企業価値算定手法、IR戦略策定、株主総会運営、
-                        配当政策、投資家プレゼンテーションなど、効果的な投資家関係構築の手法を詳しく解説します。
-                    </div>
-                    <a href="articles/investor-relations-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
                     <h2><a href="articles/compliance-guide.html">規制対応とコンプライアンス体制：法的リスクの予防と管理</a></h2>
                     <div class="article-excerpt">
                         コンプライアンス体制の実践ガイド。業界規制対応、内部統制構築、監査対応、
@@ -426,6 +507,66 @@
                         国際紛争解決、多国籍企業法務など、グローバルビジネスに必要な法的実務を詳しく解説します。
                     </div>
                     <a href="articles/international-law-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/remote-work-guide.html">リモートワークとハイブリッド組織：新しい働き方の実現</a></h2>
+                    <div class="article-excerpt">
+                        リモートワーク組織の実践ガイド。リモートワーク制度設計、デジタルコミュニケーション、
+                        バーチャルチームビルディング、結果主義管理など、新しい働き方の実現手法を詳しく解説します。
+                    </div>
+                    <a href="articles/remote-work-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/diversity-inclusion-guide.html">ダイバーシティ経営とインクルージョン：多様性を活かす組織づくり</a></h2>
+                    <div class="article-excerpt">
+                        ダイバーシティ経営の実践ガイド。ジェンダーダイバーシティ、国際化対応、障害者雇用、
+                        年齢多様性、インクルーシブリーダーシップなど、多様性を活かす組織づくりの手法を詳しく解説します。
+                    </div>
+                    <a href="articles/diversity-inclusion-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/startup-ecosystem-guide.html">スタートアップエコシステムとイノベーション：新しい価値創造</a></h2>
+                    <div class="article-excerpt">
+                        イノベーションエコシステムの実践ガイド。オープンイノベーション、コーポレートベンチャーキャピタル、
+                        アクセラレーター連携、大学産学連携、グローバルエコシステムなど、新しい価値創造の手法を詳しく解説します。
+                    </div>
+                    <a href="articles/startup-ecosystem-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/sustainability-management-guide.html">サステナビリティ経営：ESG・SDGsを経営に活かす方法</a></h2>
+                    <div class="article-excerpt">
+                        持続可能経営の実践ガイド。ESG経営の基礎、SDGs目標との連携、サステナビリティレポート作成、
+                        環境・社会貢献活動の設計、ステークホルダーエンゲージメントなど、持続可能な経営手法を詳しく解説します。
+                    </div>
+                    <a href="articles/sustainability-management-guide.html" class="read-more">続きを読む →</a>
+                </article>
+                </div>
+                
+                <!-- 技術・イノベーションセクション -->
+                <div id="technology-section">
+                    <h2>🔧 技術・イノベーション</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">DXやAI活用から最新技術動向まで、デジタル時代のビジネス変革について詳しく説明しています。</p>
+                
+                <article class="article-card">
+                    <h2><a href="articles/digital-transformation-guide.html">デジタル変革（DX）の実践：テクノロジー活用による競争力強化</a></h2>
+                    <div class="article-excerpt">
+                        DX実践の完全ガイド。DX戦略の策定、業務プロセスのデジタル化、AI・自動化の導入、
+                        データ活用と分析、セキュリティ対策など、デジタル技術を活用した競争力強化手法を詳しく解説します。
+                    </div>
+                    <a href="articles/digital-transformation-guide.html" class="read-more">続きを読む →</a>
+                </article>
+
+                <article class="article-card">
+                    <h2><a href="articles/ai-iot-guide.html">AI・IoT活用術：中小企業でもできるスマート化戦略</a></h2>
+                    <div class="article-excerpt">
+                        AI・IoT導入の実践ガイド。業務自動化・効率化、予測分析・需要予測、チャットボット導入、
+                        IoTセンサー活用、クラウドAIサービス利用など、中小企業向けスマート化戦略を詳しく解説します。
+                    </div>
+                    <a href="articles/ai-iot-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
@@ -447,33 +588,6 @@
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/leadership-development-guide.html">リーダーシップ開発と組織変革：成長企業の経営手法</a></h2>
-                    <div class="article-excerpt">
-                        リーダーシップ開発の実践ガイド。ビジョナリーリーダーシップ、組織変革マネジメント、チームエンゲージメント、
-                        パフォーマンス管理、イノベーション促進など、成長企業の経営手法を詳しく解説します。
-                    </div>
-                    <a href="articles/leadership-development-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/sustainability-esg-guide.html">サステナビリティ経営とESG投資：持続可能な事業成長</a></h2>
-                    <div class="article-excerpt">
-                        ESG経営の実践ガイド。環境経営とカーボンニュートラル、社会的責任とステークホルダー経営、
-                        ガバナンス強化、ESG投資対応など、持続可能な事業成長の手法を詳しく解説します。
-                    </div>
-                    <a href="articles/sustainability-esg-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
-                    <h2><a href="articles/startup-ecosystem-guide.html">スタートアップエコシステムとイノベーション：新しい価値創造</a></h2>
-                    <div class="article-excerpt">
-                        イノベーションエコシステムの実践ガイド。オープンイノベーション、コーポレートベンチャーキャピタル、
-                        アクセラレーター連携、大学産学連携、グローバルエコシステムなど、新しい価値創造の手法を詳しく解説します。
-                    </div>
-                    <a href="articles/startup-ecosystem-guide.html" class="read-more">続きを読む →</a>
-                </article>
-
-                <article class="article-card">
                     <h2><a href="articles/web3-blockchain-guide.html">ブロックチェーン・Web3ビジネス：次世代デジタルエコノミー</a></h2>
                     <div class="article-excerpt">
                         Web3ビジネスの実践ガイド。ブロックチェーン技術の基礎、DeFi・ NFT・ DAOの活用、
@@ -483,22 +597,23 @@
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/remote-work-guide.html">リモートワークとハイブリッド組織：新しい働き方の実現</a></h2>
+                    <h2><a href="articles/product-development-guide.html">プロダクト開発とマネジメント：市場に愛される製品づくり</a></h2>
                     <div class="article-excerpt">
-                        リモートワーク組織の実践ガイド。リモートワーク制度設計、デジタルコミュニケーション、
-                        バーチャルチームビルディング、結果主義管理など、新しい働き方の実現手法を詳しく解説します。
+                        プロダクトマネジメントの完全ガイド。技術選定と開発チーム管理、ユーザー中心設計とUI/UX、
+                        品質管理とテスト戦略、プロダクトロードマップ策定など、競争力のある製品開発の手法を詳しく解説します。
                     </div>
-                    <a href="articles/remote-work-guide.html" class="read-more">続きを読む →</a>
+                    <a href="articles/product-development-guide.html" class="read-more">続きを読む →</a>
                 </article>
 
                 <article class="article-card">
-                    <h2><a href="articles/diversity-inclusion-guide.html">ダイバーシティ経営とインクルージョン：多様性を活かす組織づくり</a></h2>
+                    <h2><a href="articles/global-expansion-guide.html">越境EC・国際展開：海外市場参入の実践ガイド</a></h2>
                     <div class="article-excerpt">
-                        ダイバーシティ経営の実践ガイド。ジェンダーダイバーシティ、国際化対応、障害者雇用、
-                        年齢多様性、インクルーシブリーダーシップなど、多様性を活かす組織づくりの手法を詳しく解説します。
+                        海外展開の実践ガイド。市場調査・参入戦略策定、越境EC構築、国際物流・決済システム、
+                        現地法人設立、文化適応マーケティングなど、グローバル展開の実践手法を詳しく解説します。
                     </div>
-                    <a href="articles/diversity-inclusion-guide.html" class="read-more">続きを読む →</a>
+                    <a href="articles/global-expansion-guide.html" class="read-more">続きを読む →</a>
                 </article>
+                </div>
 
                 <h2>近日公開予定</h2>
 
@@ -657,6 +772,26 @@
                 hamburger.classList.remove('active');
                 nav.classList.remove('active');
             }
+        });
+
+        // カテゴリナビゲーション用スムーススクロール
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryLinks = document.querySelectorAll('.category-card');
+            
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>

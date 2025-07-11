@@ -1,5 +1,147 @@
 /* ブログサイト メインスタイル - FORCE UPDATE 2025 */
 
+/* カテゴリナビゲーション */
+.category-navigation {
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.category-navigation h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2E7D32;
+    font-size: 1.8rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: #4CAF50;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #66BB6A);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover::before {
+    transform: scaleX(1);
+}
+
+.category-card .category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.category-card h3 {
+    margin-bottom: 1rem;
+    color: #2E7D32;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.category-card .category-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.category-card .category-count {
+    display: inline-block;
+    background: #E8F5E8;
+    color: #2E7D32;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* カテゴリ別の色設定 */
+.category-card.startup {
+    border-left: 4px solid #FF6B35;
+}
+
+.category-card.startup .category-icon {
+    color: #FF6B35;
+}
+
+.category-card.funding {
+    border-left: 4px solid #4CAF50;
+}
+
+.category-card.funding .category-icon {
+    color: #4CAF50;
+}
+
+.category-card.management {
+    border-left: 4px solid #2196F3;
+}
+
+.category-card.management .category-icon {
+    color: #2196F3;
+}
+
+.category-card.legal {
+    border-left: 4px solid #9C27B0;
+}
+
+.category-card.legal .category-icon {
+    color: #9C27B0;
+}
+
+.category-card.technology {
+    border-left: 4px solid #FF9800;
+}
+
+.category-card.technology .category-icon {
+    color: #FF9800;
+}
+
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .category-card {
+        padding: 1.5rem;
+    }
+    
+    .category-card .category-icon {
+        font-size: 2rem;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
