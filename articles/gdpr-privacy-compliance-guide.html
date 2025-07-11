@@ -361,51 +361,46 @@
                 </div>
             </div>
 
-            <div class="share-buttons">
-                <h3>この記事をシェア</h3>
-                <div class="social-buttons">
-                    <a href="https://twitter.com/intent/tweet?url=https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html&text=GDPR・個人情報保護：プライバシー規制の実務対応" target="_blank" rel="noopener noreferrer" class="share-btn twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                        Twitter
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html" target="_blank" rel="noopener noreferrer" class="share-btn facebook">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                        Facebook
-                    </a>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://kigyou-lab.vercel.app/articles/gdpr-privacy-compliance-guide.html" target="_blank" rel="noopener noreferrer" class="share-btn linkedin">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        LinkedIn
-                    </a>
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
                 </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
             </div>
         </article>
 
         <aside class="sidebar">
             <h3>最新記事</h3>
             <ul>
-                <li><a href="leadership-development-guide.html">リーダーシップ開発と組織変革：成長企業の経営手法</a></li>
-                <li><a href="sustainability-esg-guide.html">サステナビリティ経営とESG投資：持続可能な事業成長</a></li>
-                <li><a href="startup-ecosystem-guide.html">スタートアップエコシステムとイノベーション：新しい価値創造</a></li>
-            </ul>
-
-            <h3>関連記事</h3>
-            <ul>
-                <li><a href="compliance-guide.html">規制対応とコンプライアンス体制：法的リスクの予防と管理</a></li>
-                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
-                <li><a href="international-law-guide.html">国際取引法務：グローバルビジネスの法的実務</a></li>
+                <li><a href="funding-guide.html">資金調達の方法と注意点：スタートアップのための完全ガイド</a></li>
+                <li><a href="tax-accounting-guide.html">税務・会計の基礎知識：会社設立後に知っておくべき重要ポイント</a></li>
+                <li><a href="company-establishment-guide.html">会社設立完全ガイド：初心者でもわかる設立手続きと成功のポイント</a></li>
             </ul>
 
             <h3>カテゴリ</h3>
             <ul>
-                <li><a href="../articles.html#legal-section">法務・組織</a></li>
-                <li><a href="../articles.html#management-section">経営・戦略</a></li>
-                <li><a href="../articles.html#technology-section">技術・イノベーション</a></li>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
+            </ul>
+
+            <h3>お役立ちリンク</h3>
+            <ul>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
             </ul>
         </aside>
     </main>
@@ -416,25 +411,71 @@
     </footer>
 
     <script>
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('GDPR・個人情報保護：プライバシー規制の実務対応');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=GDPR,個人情報保護,プライバシー,起業ラボ`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('GDPR・個人情報保護：プライバシー規制の実務対応');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('GDPR・個人情報保護：プライバシー規制の実務対応');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
+            });
+        }
+
         // スマートヘッダー機能
         let lastScrollTop = 0;
+        let scrollTimeout;
         const header = document.querySelector('header');
-
+        
         window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                header.classList.add('header-hidden');
-                header.classList.remove('header-visible');
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
             } else {
                 header.classList.remove('header-hidden');
-                header.classList.add('header-visible');
+                header.classList.remove('header-visible');
             }
             
             lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
         });
 
-        // ハンバーガーメニュー
+        // ハンバーガーメニュー機能
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('nav');
 
@@ -443,7 +484,14 @@
             nav.classList.toggle('active');
         });
 
-        // スクロール時にメニューを閉じる
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
         window.addEventListener('scroll', function() {
             if (nav.classList.contains('active')) {
                 hamburger.classList.remove('active');
