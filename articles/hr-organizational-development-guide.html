@@ -775,49 +775,42 @@
                 <p>効果的な人事制度・組織開発により、従業員が活き活きと働き、高いパフォーマンスを発揮する組織を構築することができます。継続的な取り組みにより、持続的な組織力向上を実現しましょう。</p>
             </section>
 
+            <div class="article-tags">
+                <h3>この記事のタグ</h3>
+                <div class="tags">
+                    <span class="tag">#人事制度</span>
+                    <span class="tag">#組織開発</span>
+                    <span class="tag">#採用戦略</span>
+                    <span class="tag">#人材育成</span>
+                    <span class="tag">#エンゲージメント</span>
+                    <span class="tag">#リーダーシップ</span>
+                    <span class="tag">#働き方改革</span>
+                    <span class="tag">#組織文化</span>
+                </div>
+            </div>
+
+            <div class="social-share">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
+                </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
+            </div>
         </article>
-
-        <div class="article-tags">
-            <h3>この記事のタグ</h3>
-            <div class="tags">
-                <span class="tag">人事制度</span>
-                <span class="tag">組織開発</span>
-                <span class="tag">採用戦略</span>
-                <span class="tag">人材育成</span>
-                <span class="tag">エンゲージメント</span>
-                <span class="tag">リーダーシップ</span>
-                <span class="tag">働き方改革</span>
-                <span class="tag">組織文化</span>
-            </div>
-        </div>
-
-        <div class="social-sharing">
-            <h3>この記事をシェア</h3>
-            <div class="share-buttons">
-                <a href="#" onclick="shareOnTwitter()" class="share-btn twitter">
-                    <span>Twitter</span>
-                </a>
-                <a href="#" onclick="shareOnFacebook()" class="share-btn facebook">
-                    <span>Facebook</span>
-                </a>
-                <a href="#" onclick="shareOnLinkedIn()" class="share-btn linkedin">
-                    <span>LinkedIn</span>
-                </a>
-                <a href="#" onclick="shareOnLine()" class="share-btn line">
-                    <span>LINE</span>
-                </a>
-                <a href="#" onclick="copyURL()" class="share-btn copy">
-                    <span>URLをコピー</span>
-                </a>
-            </div>
-        </div>
 
         <aside class="sidebar">
             <h3>最新記事</h3>
             <ul>
-                <li><a href="marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></li>
-                <li><a href="management-guide.html">経営管理の基礎：効率的な会社運営のためのツールと手法</a></li>
-                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
+                <li><a href="funding-guide.html">資金調達の方法と注意点：スタートアップのための完全ガイド</a></li>
+                <li><a href="tax-accounting-guide.html">税務・会計の基礎知識：会社設立後に知っておくべき重要ポイント</a></li>
+                <li><a href="company-establishment-guide.html">会社設立完全ガイド：初心者でもわかる設立手続きと成功のポイント</a></li>
             </ul>
 
             <h3>カテゴリ</h3>
@@ -842,7 +835,7 @@
 
     <footer>
         <p>&copy; 2025 起業ラボ. All rights reserved. | <a href="../privacy.html" style="color: #ccc; text-decoration: underline;">プライバシーポリシー</a></p>
-        <p>本サイトの情報は一般的な情報提供を目的としており、個別の人事アドバイスではありません。</p>
+        <p>本サイトの情報は一般的な情報提供を目的としており、個別の法的アドバイスではありません。</p>
     </footer>
 
     <script>
@@ -897,40 +890,42 @@
             });
         });
 
-        // ソーシャルシェア機能
-        function shareOnTwitter() {
-            const text = document.title;
-            const url = window.location.href;
-            const hashtags = '起業,人事制度,組織開発,人材戦略';
-            const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent(hashtags)}`;
-            window.open(twitterUrl, '_blank');
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('人事制度・組織開発ガイド：成長企業の人材戦略と組織構築');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=人事制度,組織開発,人材戦略,起業,起業ラボ`, '_blank');
         }
 
-        function shareOnFacebook() {
-            const url = window.location.href;
-            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-            window.open(facebookUrl, '_blank');
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
         }
 
-        function shareOnLinkedIn() {
-            const url = window.location.href;
-            const title = document.title;
-            const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`;
-            window.open(linkedInUrl, '_blank');
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('人事制度・組織開発ガイド：成長企業の人材戦略と組織構築');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
         }
 
-        function shareOnLine() {
-            const text = document.title;
-            const url = window.location.href;
-            const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
-            window.open(lineUrl, '_blank');
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('人事制度・組織開発ガイド：成長企業の人材戦略と組織構築');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
         }
 
-        function copyURL() {
+        function copyToClipboard() {
             navigator.clipboard.writeText(window.location.href).then(() => {
-                alert('URLをクリップボードにコピーしました');
+                alert('URLをコピーしました！');
             }).catch(() => {
-                alert('URLのコピーに失敗しました');
+                alert('URLのコピーに失敗しました。');
             });
         }
 
