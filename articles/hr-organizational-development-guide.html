@@ -777,27 +777,65 @@
 
         </article>
 
+        <div class="article-tags">
+            <h3>この記事のタグ</h3>
+            <div class="tags">
+                <span class="tag">人事制度</span>
+                <span class="tag">組織開発</span>
+                <span class="tag">採用戦略</span>
+                <span class="tag">人材育成</span>
+                <span class="tag">エンゲージメント</span>
+                <span class="tag">リーダーシップ</span>
+                <span class="tag">働き方改革</span>
+                <span class="tag">組織文化</span>
+            </div>
+        </div>
+
+        <div class="social-sharing">
+            <h3>この記事をシェア</h3>
+            <div class="share-buttons">
+                <a href="#" onclick="shareOnTwitter()" class="share-btn twitter">
+                    <span>Twitter</span>
+                </a>
+                <a href="#" onclick="shareOnFacebook()" class="share-btn facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="#" onclick="shareOnLinkedIn()" class="share-btn linkedin">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" onclick="shareOnLine()" class="share-btn line">
+                    <span>LINE</span>
+                </a>
+                <a href="#" onclick="copyURL()" class="share-btn copy">
+                    <span>URLをコピー</span>
+                </a>
+            </div>
+        </div>
+
         <aside class="sidebar">
-            <h3>関連記事</h3>
+            <h3>最新記事</h3>
             <ul>
-                <li><a href="recruitment-strategy-guide.html">採用戦略と人材確保：優秀な人材を獲得する方法</a></li>
-                <li><a href="organizational-culture-guide.html">組織文化とチームビルディング：強い組織をつくる手法</a></li>
-                <li><a href="leadership-development-guide.html">リーダーシップ開発と組織変革：成長企業の経営手法</a></li>
-                <li><a href="diversity-inclusion-guide.html">ダイバーシティ経営とインクルージョン：多様性を活かす組織づくり</a></li>
+                <li><a href="marketing-guide.html">マーケティング戦略の基礎：顧客獲得とブランディングの手法</a></li>
+                <li><a href="management-guide.html">経営管理の基礎：効率的な会社運営のためのツールと手法</a></li>
+                <li><a href="legal-guide.html">法務・契約書の基本：起業家が知るべき法的知識</a></li>
             </ul>
 
             <h3>カテゴリ</h3>
             <ul>
-                <li><a href="../articles.html#legal-section">法務・組織</a></li>
-                <li><a href="../articles.html#management-section">経営・戦略</a></li>
-                <li><a href="../articles.html#startup-section">起業・設立</a></li>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
             </ul>
 
-            <h3>お役立ちツール</h3>
+            <h3>お役立ちリンク</h3>
             <ul>
-                <li><a href="#" onclick="sharePage()">この記事をシェア</a></li>
-                <li><a href="#" onclick="printPage()">印刷用ページ</a></li>
-                <li><a href="../contact.html">お問い合わせ</a></li>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
             </ul>
         </aside>
     </main>
@@ -860,23 +898,40 @@
         });
 
         // ソーシャルシェア機能
-        function sharePage() {
-            if (navigator.share) {
-                navigator.share({
-                    title: document.title,
-                    url: window.location.href
-                });
-            } else {
-                // フォールバック：URLをクリップボードにコピー
-                navigator.clipboard.writeText(window.location.href).then(() => {
-                    alert('URLをクリップボードにコピーしました');
-                });
-            }
+        function shareOnTwitter() {
+            const text = document.title;
+            const url = window.location.href;
+            const hashtags = '起業,人事制度,組織開発,人材戦略';
+            const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent(hashtags)}`;
+            window.open(twitterUrl, '_blank');
         }
 
-        // 印刷機能
-        function printPage() {
-            window.print();
+        function shareOnFacebook() {
+            const url = window.location.href;
+            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+            window.open(facebookUrl, '_blank');
+        }
+
+        function shareOnLinkedIn() {
+            const url = window.location.href;
+            const title = document.title;
+            const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`;
+            window.open(linkedInUrl, '_blank');
+        }
+
+        function shareOnLine() {
+            const text = document.title;
+            const url = window.location.href;
+            const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+            window.open(lineUrl, '_blank');
+        }
+
+        function copyURL() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをクリップボードにコピーしました');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました');
+            });
         }
 
         // 目次のスムーススクロール
