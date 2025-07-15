@@ -557,6 +557,35 @@
     </footer>
 
     <script>
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareToLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareToLine() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLがコピーされました！');
+            });
+        }
+
         // スマートヘッダー機能
         let lastScrollTop = 0;
         let scrollTimeout;
@@ -608,34 +637,13 @@
             });
         });
 
-        function shareToTwitter() {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
-            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
-        }
-
-        function shareToFacebook() {
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-        }
-
-        function shareToLinkedIn() {
-            const url = encodeURIComponent(window.location.href);
-            const title = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
-        }
-
-        function shareToLine() {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
-            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
-        }
-
-        function copyToClipboard() {
-            navigator.clipboard.writeText(window.location.href).then(() => {
-                alert('リンクをクリップボードにコピーしました');
-            });
-        }
+        // スクロール時にメニューを閉じる
+        window.addEventListener('scroll', function() {
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
