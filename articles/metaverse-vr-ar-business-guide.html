@@ -494,51 +494,59 @@
             </section>
 
             <div class="article-tags">
-                <h3>タグ</h3>
-                <span class="tag">メタバース</span>
-                <span class="tag">VR</span>
-                <span class="tag">AR</span>
-                <span class="tag">XR</span>
-                <span class="tag">没入型体験</span>
-                <span class="tag">NFT</span>
-                <span class="tag">デジタルツイン</span>
-                <span class="tag">仮想イベント</span>
-                <span class="tag">ソーシャルVR</span>
-                <span class="tag">Web3</span>
+                <h3>この記事のタグ</h3>
+                <div class="tags">
+                    <span class="tag">#メタバース</span>
+                    <span class="tag">#VR</span>
+                    <span class="tag">#AR</span>
+                    <span class="tag">#XR</span>
+                    <span class="tag">#没入型体験</span>
+                    <span class="tag">#NFT</span>
+                    <span class="tag">#デジタルツイン</span>
+                    <span class="tag">#仮想イベント</span>
+                </div>
             </div>
 
-            <div class="social-sharing">
-                <h3>この記事をシェア</h3>
+            <div class="social-share">
+                <h3>Share</h3>
                 <div class="share-buttons">
-                    <button onclick="shareToTwitter()" class="share-btn twitter">Twitter</button>
-                    <button onclick="shareToFacebook()" class="share-btn facebook">Facebook</button>
-                    <button onclick="shareToLinkedIn()" class="share-btn linkedin">LinkedIn</button>
-                    <button onclick="shareToLine()" class="share-btn line">LINE</button>
-                    <button onclick="copyToClipboard()" class="share-btn copy">リンクをコピー</button>
+                    <a href="#" class="share-button twitter" onclick="shareToTwitter()" title="Twitterでシェア"></a>
+                    <a href="#" class="share-button facebook" onclick="shareToFacebook()" title="Facebookでシェア"></a>
+                    <a href="#" class="share-button linkedin" onclick="shareToLinkedIn()" title="LinkedInでシェア"></a>
+                    <a href="#" class="share-button line" onclick="shareToLine()" title="LINEでシェア"></a>
+                    <a href="#" class="share-button copy" onclick="copyToClipboard()" title="URLをコピー"></a>
                 </div>
+            </div>
+
+            <div class="back-to-articles">
+                <a href="../articles.html" class="back-button">記事一覧に戻る</a>
             </div>
         </article>
 
         <aside class="sidebar">
             <h3>最新記事</h3>
             <ul>
-                <li><a href="smart-city-urban-tech-guide.html">スマートシティ・都市テック：未来の都市システムとイノベーション創出</a></li>
-                <li><a href="green-technology-carbon-neutral-guide.html">グリーンテクノロジー・カーボンニュートラル：持続可能な未来を実現する技術革新</a></li>
-                <li><a href="creative-economy-content-business-guide.html">クリエイティブエコノミー・コンテンツビジネス：創造的価値の収益化と事業拡大</a></li>
+                <li><a href="funding-guide.html">資金調達の方法と注意点：スタートアップのための完全ガイド</a></li>
+                <li><a href="tax-accounting-guide.html">税務・会計の基礎知識：会社設立後に知っておくべき重要ポイント</a></li>
+                <li><a href="company-establishment-guide.html">会社設立完全ガイド：初心者でもわかる設立手続きと成功のポイント</a></li>
             </ul>
 
-            <h3>関連記事</h3>
+            <h3>カテゴリ</h3>
             <ul>
-                <li><a href="digital-transformation-guide.html">デジタル変革（DX）の実践</a></li>
-                <li><a href="web3-blockchain-guide.html">ブロックチェーン・Web3ビジネス</a></li>
-                <li><a href="biotechnology-life-sciences-guide.html">バイオテクノロジー・ライフサイエンス</a></li>
+                <li><a href="#company-establishment">会社設立</a></li>
+                <li><a href="#tax-accounting">税務・会計</a></li>
+                <li><a href="#funding">資金調達</a></li>
+                <li><a href="#legal">法務・契約</a></li>
+                <li><a href="#management">経営管理</a></li>
             </ul>
 
-            <h3>人気のカテゴリ</h3>
+            <h3>お役立ちリンク</h3>
             <ul>
-                <li><a href="../articles.html#technology-section">技術・イノベーション</a></li>
-                <li><a href="../articles.html#management-section">経営・戦略</a></li>
-                <li><a href="../articles.html#funding-section">資金・投資</a></li>
+                <li><a href="https://houmukyoku.moj.go.jp/" target="_blank">法務局</a></li>
+                <li><a href="https://www.nta.go.jp/" target="_blank">国税庁</a></li>
+                <li><a href="https://www.nenkin.go.jp/" target="_blank">日本年金機構</a></li>
+                <li><a href="https://www.chusho.meti.go.jp/" target="_blank">中小企業庁</a></li>
+                <li><a href="https://www.jfc.go.jp/" target="_blank">日本政策金融公庫</a></li>
             </ul>
         </aside>
     </main>
@@ -600,10 +608,9 @@
             });
         });
 
-        // ソーシャル共有機能
         function shareToTwitter() {
             const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造 | 起業ラボ');
+            const text = encodeURIComponent('メタバース・VR/ARビジネス：没入型体験の商業化と新たな価値創造');
             window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
         }
 
