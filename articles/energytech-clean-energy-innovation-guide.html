@@ -749,8 +749,8 @@
     <script>
         function shareToTwitter() {
             const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('エネルギーテック・クリーンエネルギー：持続可能なエネルギー革命とグリーンビジネス創出');
-            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+            const text = encodeURIComponent('資金調達の方法と注意点：スタートアップのための完全ガイド');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=資金調達,スタートアップ,起業,起業ラボ`, '_blank');
         }
 
         function shareToFacebook() {
@@ -760,19 +760,56 @@
 
         function shareToLinkedIn() {
             const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+            const title = encodeURIComponent('資金調達の方法と注意点：スタートアップのための完全ガイド');
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
         }
 
         function shareToLine() {
             const url = encodeURIComponent(window.location.href);
-            window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
+            const text = encodeURIComponent('資金調達の方法と注意点：スタートアップのための完全ガイド');
+            window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
         }
 
         function copyToClipboard() {
-            navigator.clipboard.writeText(window.location.href).then(function() {
-                alert('URLをコピーしました');
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URLをコピーしました！');
+            }).catch(() => {
+                alert('URLのコピーに失敗しました。');
             });
         }
+
+        // スマートヘッダー機能
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                } else {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-visible');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+            }, 2000);
+        });
 
         // ハンバーガーメニュー機能
         const hamburger = document.querySelector('.hamburger');
